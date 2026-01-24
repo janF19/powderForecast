@@ -21,7 +21,7 @@ RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 COPY . .
 
 # Expose port
-EXPOSE 3000
+EXPOSE 3002
 
 # Start the application
 CMD ["node", "app.js"]
