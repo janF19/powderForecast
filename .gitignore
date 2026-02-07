@@ -15,3 +15,9 @@ python_help_scripts
 
 # System files
 .DS_Store
+
+# Python cache
+.cache
+.cache.sqlite
+__pycache__/
+*.pyc
