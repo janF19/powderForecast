@@ -35,19 +35,19 @@ jobs:
           PYTHONUNBUFFERED: "1"
           TZ: "UTC"
 
+      
       - name: Commit and push if changes exist
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main
           git add weather_dataFull_7.json
-          git diff --quiet && git diff --staged --quiet || (
-            git commit -m "Update weather data [skip ci]" &&
-            git pull --rebase origin main &&
-            git push
-          )
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update weather data [skip ci]" && git push)
+
       - name: Trigger Coolify Deploy
         if: success()
         run: |
           curl -X GET "${{ secrets.COOLIFY_DEPLOY_HOOK_URL }}" \
             -H "Authorization: Bearer ${{ secrets.COOLIFY_API_TOKEN }}"
+
 
