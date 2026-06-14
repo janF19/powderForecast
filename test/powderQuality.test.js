@@ -63,3 +63,89 @@ test('series of all-zero snow has peak 0 at offset 0', () => {
   assert.equal(out.peakPQI, 0);
   assert.equal(out.peakOffset, 0);
 });
+
+const { pqiBand, buildResortPQI } = require('../utils/powderQuality');
+
+test('pqiBand maps scores to named bands', () => {
+  assert.equal(pqiBand(75), 'epic');
+  assert.equal(pqiBand(55), 'great');
+  assert.equal(pqiBand(35), 'good');
+  assert.equal(pqiBand(20), 'ok');
+  assert.equal(pqiBand(5), 'poor');
+  assert.equal(pqiBand(0), 'none');
+});
+
+// Build a 28-length daily array: zeros everywhere except the 7-day
+// forecast window (indices 14..20), which gets `values`.
+function dailyArray(values) {
+  const arr = new Array(28).fill(0);
+  for (let i = 0; i < values.length; i++) arr[14 + i] = values[i];
+  return arr;
+}
+
+function fakeElevation({ snow, tmax, wind, rain }) {
+  return {
+    elevation_m: 2000,
+    snowfall_sum: dailyArray(snow),
+    temperature_2m_max: dailyArray(tmax),
+    wind_speed_10m_max: dailyArray(wind),
+    rain_sum: dailyArray(rain),
+  };
+}
+
+test('buildResortPQI summarizes top lift and exposes per-elevation series', () => {
+  const resort = {
+    country: 'Austria',
+    elevations: {
+      'Top Lift': fakeElevation({
+        snow: [0, 30, 0, 0, 0, 0, 0],
+        tmax: [0, -10, 0, 0, 0, 0, 0],
+        wind: [0, 5, 0, 0, 0, 0, 0],
+        rain: [0, 0, 0, 0, 0, 0, 0],
+      }),
+      'Mid Lift': fakeElevation({
+        snow: [0, 0, 0, 0, 0, 0, 0],
+        tmax: [0, 0, 0, 0, 0, 0, 0],
+        wind: [0, 0, 0, 0, 0, 0, 0],
+        rain: [0, 0, 0, 0, 0, 0, 0],
+      }),
+      'Bottom Lift': fakeElevation({
+        snow: [0, 0, 0, 0, 0, 0, 0],
+        tmax: [0, 0, 0, 0, 0, 0, 0],
+        wind: [0, 0, 0, 0, 0, 0, 0],
+        rain: [0, 0, 0, 0, 0, 0, 0],
+      }),
+    },
+  };
+  const out = buildResortPQI(resort);
+  assert.ok(out.peakPQI > 80 && out.peakPQI < 90);   // cold 30cm dump
+  assert.equal(out.peakOffset, 1);                   // second forecast day
+  assert.equal(out.freshSnowOnPeakDay, 30);
+  assert.equal(out.perElevation['Top Lift'].dailyPQI.length, 7);
+  assert.equal(out.perElevation['Mid Lift'].peakPQI, 0);
+});
+
+test('buildResortPQI tolerates a missing elevation without throwing', () => {
+  const resort = {
+    country: 'Austria',
+    elevations: {
+      'Top Lift': fakeElevation({
+        snow: [10, 0, 0, 0, 0, 0, 0],
+        tmax: [-8, 0, 0, 0, 0, 0, 0],
+        wind: [0, 0, 0, 0, 0, 0, 0],
+        rain: [0, 0, 0, 0, 0, 0, 0],
+      }),
+      // Mid + Bottom absent on purpose
+    },
+  };
+  const out = buildResortPQI(resort);
+  assert.ok(out.peakPQI > 0);
+  assert.equal(out.perElevation['Mid Lift'], null);
+  assert.equal(out.perElevation['Bottom Lift'], null);
+});
+
+test('buildResortPQI returns a zeroed summary when elevations are absent', () => {
+  const out = buildResortPQI({ country: 'Austria' });
+  assert.equal(out.peakPQI, 0);
+  assert.equal(out.perElevation['Top Lift'], null);
+});

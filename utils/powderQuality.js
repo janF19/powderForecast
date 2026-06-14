@@ -41,4 +41,62 @@ function computePQISeries({ snowfall, tmax, wind, rain }) {
   return { dailyPQI, peakPQI, peakOffset };
 }
 
-module.exports = { FORECAST_START, FORECAST_DAYS, clamp, computeDayPQI, computePQISeries };
+// Map a 0..100 PQI to a named band (drives badge/cell colors).
+function pqiBand(pqi) {
+  if (pqi >= 70) return 'epic';
+  if (pqi >= 50) return 'great';
+  if (pqi >= 30) return 'good';
+  if (pqi >= 15) return 'ok';
+  if (pqi > 0) return 'poor';
+  return 'none';
+}
+
+// Slice the 7-day forecast window out of one elevation's 28-day arrays.
+function elevationForecastSlice(elevationData) {
+  const end = FORECAST_START + FORECAST_DAYS;
+  return {
+    snowfall: elevationData.snowfall_sum.slice(FORECAST_START, end),
+    tmax: elevationData.temperature_2m_max.slice(FORECAST_START, end),
+    wind: elevationData.wind_speed_10m_max.slice(FORECAST_START, end),
+    rain: elevationData.rain_sum.slice(FORECAST_START, end),
+  };
+}
+
+const LIFTS = ['Top Lift', 'Mid Lift', 'Bottom Lift'];
+
+// Resort-level summary. Headline = Top Lift peak; detail = all 3 elevations.
+function buildResortPQI(resortData) {
+  const elevations = (resortData && resortData.elevations) || {};
+  const perElevation = {};
+  for (const lift of LIFTS) {
+    const ed = elevations[lift];
+    if (!ed || !Array.isArray(ed.snowfall_sum)) {
+      perElevation[lift] = null;
+      continue;
+    }
+    perElevation[lift] = computePQISeries(elevationForecastSlice(ed));
+  }
+
+  const top = perElevation['Top Lift'];
+  const peakPQI = top ? top.peakPQI : 0;
+  const peakOffset = top ? top.peakOffset : 0;
+
+  let freshSnowOnPeakDay = 0;
+  const topEd = elevations['Top Lift'];
+  if (top && topEd && Array.isArray(topEd.snowfall_sum)) {
+    const snowSlice = topEd.snowfall_sum.slice(FORECAST_START, FORECAST_START + FORECAST_DAYS);
+    freshSnowOnPeakDay = Number(snowSlice[peakOffset]) || 0;
+  }
+
+  return { peakPQI, peakOffset, freshSnowOnPeakDay, perElevation };
+}
+
+module.exports = {
+  FORECAST_START,
+  FORECAST_DAYS,
+  clamp,
+  computeDayPQI,
+  computePQISeries,
+  pqiBand,
+  buildResortPQI,
+};
