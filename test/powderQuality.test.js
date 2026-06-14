@@ -2,7 +2,7 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { computeDayPQI } = require('../utils/powderQuality');
 
-const near = (actual, expected, tol = 0.5) =>
+const near = (actual, expected, tol = 0.05) =>
   assert.ok(Math.abs(actual - expected) <= tol, `expected ~${expected}, got ${actual}`);
 
 test('cold calm big dump scores high', () => {
@@ -28,7 +28,7 @@ test('rain strongly penalizes an otherwise great dump', () => {
   assert.ok(rained > 0 && rained < 40, `expected ruined-but-positive, got ${rained}`);
 });
 
-test('coldFactor floors out at/above ~0C (0C and +5C score the same)', () => {
+test('coldFactor floors at temperatures above ~-1C (0C and +5C give the same score)', () => {
   assert.equal(computeDayPQI(20, 0, 5, 0), computeDayPQI(20, 5, 5, 0));
 });
 
