@@ -4,6 +4,8 @@ const path = require('path');
 const { stdout, stderr } = require('process');
 const { exec } = require('child_process');
 const os = require('os');
+const { buildResortPQI, pqiBand } = require('../utils/powderQuality');
+const { forecastDayLabel } = require('../utils/forecastDate');
 
 
 
@@ -51,9 +53,28 @@ exports.getSnowfallForResorts = async (req, res) => {
 
         //console.log('Sample URL:', snowfallData[0].url);
 
+        // Top 5 by Powder Quality Index for the home-page panel.
+        const now = new Date();
+        const topPowder = Object.entries(weatherData)
+            .map(([resortName, resortData]) => {
+                const pqi = buildResortPQI(resortData);
+                return {
+                    resort: resortName,
+                    country: resortData.country,
+                    peakPQI: Math.round(pqi.peakPQI),
+                    band: pqiBand(pqi.peakPQI),
+                    peakDayLabel: forecastDayLabel(pqi.peakOffset, now),
+                    freshSnow: Math.round(pqi.freshSnowOnPeakDay),
+                };
+            })
+            .filter((r) => r.peakPQI > 0)
+            .sort((a, b) => b.peakPQI - a.peakPQI)
+            .slice(0, 5);
+
         res.render('index', {
             sortedByUpcoming7Days,
-            sortedByLast14Days
+            sortedByLast14Days,
+            topPowder
         });
     } catch (error) {
         console.error('Error reading weather data:', error);
@@ -333,6 +354,49 @@ exports.calculateHistorySnow = (req, res) => {
 exports.getAllHistoryData = (req, res) => {
     res.render('allHistory');
 };
+
+// Powder Quality page: rank resorts by top-lift peak PQI, with a
+// per-elevation daily timeline for the expandable detail rows.
+exports.getPowderQuality = async (req, res) => {
+  try {
+    const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+    const now = new Date();
+    const dayLabels = Array.from({ length: 7 }, (_, i) => forecastDayLabel(i, now));
+
+    const resorts = Object.entries(weatherData)
+      .map(([resortName, resortData]) => {
+        const pqi = buildResortPQI(resortData);
+
+        // Per-elevation rounded daily PQI + band for the timeline cells.
+        const elevations = {};
+        ['Top Lift', 'Mid Lift', 'Bottom Lift'].forEach((lift) => {
+          const series = pqi.perElevation[lift];
+          elevations[lift] = series
+            ? series.dailyPQI.map((v) => ({ value: Math.round(v), band: pqiBand(v) }))
+            : null;
+        });
+
+        return {
+          resort: resortName,
+          country: resortData.country,
+          url: resortData.url || '#',
+          peakPQI: Math.round(pqi.peakPQI),
+          band: pqiBand(pqi.peakPQI),
+          peakDayLabel: forecastDayLabel(pqi.peakOffset, now),
+          freshSnow: Math.round(pqi.freshSnowOnPeakDay),
+          elevations,
+        };
+      })
+      .filter((r) => r.peakPQI > 0)
+      .sort((a, b) => b.peakPQI - a.peakPQI);
+
+    res.render('powderQuality', { resorts, dayLabels });
+  } catch (error) {
+    console.error('Error computing powder quality:', error);
+    res.status(500).render('error', { error: 'Failed to load powder quality data' });
+  }
+};
+
 
 exports.calculateAllHistory = (req, res) => {
     const startDate = req.body.startDate;
