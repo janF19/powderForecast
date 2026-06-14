@@ -40,3 +40,26 @@ test('null inputs are treated as no-contribution, not NaN', () => {
   assert.equal(computeDayPQI(null, -10, 5, 0), 0);
   assert.ok(Number.isFinite(computeDayPQI(20, null, null, null)));
 });
+
+const { computePQISeries } = require('../utils/powderQuality');
+
+test('series returns one PQI per day and finds the peak', () => {
+  const out = computePQISeries({
+    snowfall: [30, 10],
+    tmax:     [2, -15],   // day 0 warm, day 1 cold
+    wind:     [50, 2],    // day 0 windy, day 1 calm
+    rain:     [0, 0],
+  });
+  assert.equal(out.dailyPQI.length, 2);
+  // Day 1 (cold, calm, smaller) beats day 0 (warm, windy, bigger dump).
+  assert.equal(out.peakOffset, 1);
+  assert.ok(out.peakPQI > out.dailyPQI[0]);
+});
+
+test('series of all-zero snow has peak 0 at offset 0', () => {
+  const out = computePQISeries({
+    snowfall: [0, 0, 0], tmax: [-5, -5, -5], wind: [0, 0, 0], rain: [0, 0, 0],
+  });
+  assert.equal(out.peakPQI, 0);
+  assert.equal(out.peakOffset, 0);
+});

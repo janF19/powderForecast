@@ -25,4 +25,20 @@ function computeDayPQI(snow, tmax, wind, rain) {
   return amount * coldFactor * windFactor * rainFactor;
 }
 
-module.exports = { FORECAST_START, FORECAST_DAYS, clamp, computeDayPQI };
+// Compute PQI for each day of equal-length arrays, plus the peak and its offset.
+function computePQISeries({ snowfall, tmax, wind, rain }) {
+  const dailyPQI = snowfall.map((_, i) =>
+    computeDayPQI(snowfall[i], tmax[i], wind[i], rain[i])
+  );
+  let peakPQI = 0;
+  let peakOffset = 0;
+  dailyPQI.forEach((v, i) => {
+    if (v > peakPQI) {
+      peakPQI = v;
+      peakOffset = i;
+    }
+  });
+  return { dailyPQI, peakPQI, peakOffset };
+}
+
+module.exports = { FORECAST_START, FORECAST_DAYS, clamp, computeDayPQI, computePQISeries };
