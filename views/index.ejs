@@ -35,6 +35,35 @@
             </div>
         </header>
 
+        <% if (typeof topPowder !== 'undefined' && topPowder && topPowder.length) { %>
+        <section class="pqi-home-section">
+            <div class="section-one-header">
+                <h2>Top Powder Right Now</h2>
+                <div class="button-group">
+                    <a href="/powder-quality" class="btn">See Full Powder Quality Index</a>
+                </div>
+            </div>
+            <div class="pqi-home-grid">
+                <% topPowder.forEach(function(resort) { %>
+                    <a href="/powder-quality" class="pqi-card pqi-<%= resort.band %>-border">
+                        <span class="pqi-badge pqi-<%= resort.band %>"><%= resort.peakPQI %></span>
+                        <span class="pqi-card-name">
+                            <% if (resort.country === 'Switzerland') { %><img src="https://flagcdn.com/w20/ch.png" alt="Switzerland" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'Austria') { %><img src="https://flagcdn.com/w20/at.png" alt="Austria" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'France') { %><img src="https://flagcdn.com/w20/fr.png" alt="France" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'Italy') { %><img src="https://flagcdn.com/w20/it.png" alt="Italy" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'Slovakia') { %><img src="https://flagcdn.com/w20/sk.png" alt="Slovakia" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'Slovenia') { %><img src="https://flagcdn.com/w20/si.png" alt="Slovenia" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } else if (resort.country === 'Germany') { %><img src="https://flagcdn.com/w20/de.png" alt="Germany" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;">
+                            <% } %><%= resort.resort %>
+                        </span>
+                        <span class="pqi-card-meta"><%= resort.freshSnow %> cm &middot; <%= resort.peakDayLabel %></span>
+                    </a>
+                <% }); %>
+            </div>
+        </section>
+        <% } %>
+
         <section class="forecast-section">
             <div class="section-one-header">
                 <h2>Top 10 Resorts for Upcoming Powder</h2>

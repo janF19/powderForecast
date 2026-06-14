@@ -53,9 +53,28 @@ exports.getSnowfallForResorts = async (req, res) => {
 
         //console.log('Sample URL:', snowfallData[0].url);
 
+        // Top 5 by Powder Quality Index for the home-page panel.
+        const now = new Date();
+        const topPowder = Object.entries(weatherData)
+            .map(([resortName, resortData]) => {
+                const pqi = buildResortPQI(resortData);
+                return {
+                    resort: resortName,
+                    country: resortData.country,
+                    peakPQI: Math.round(pqi.peakPQI),
+                    band: pqiBand(pqi.peakPQI),
+                    peakDayLabel: forecastDayLabel(pqi.peakOffset, now),
+                    freshSnow: Math.round(pqi.freshSnowOnPeakDay),
+                };
+            })
+            .filter((r) => r.peakPQI > 0)
+            .sort((a, b) => b.peakPQI - a.peakPQI)
+            .slice(0, 5);
+
         res.render('index', {
             sortedByUpcoming7Days,
-            sortedByLast14Days
+            sortedByLast14Days,
+            topPowder
         });
     } catch (error) {
         console.error('Error reading weather data:', error);
