@@ -38,6 +38,22 @@ computes per-ski-area slope/aspect/vertical metrics from OSM + elevation. This
 **freeride-specific** angle — off-piste steep/aspect quality within the lift-served
 envelope, paired with live PQI conditions — not "compute terrain stats" in general.
 
+**Why not OSM freeride tags alone? (researched 2026-06-15)** We checked whether pulling
+`piste:difficulty=freeride` tags directly would be simpler than computing terrain from a
+DEM. It would be simpler — but it fails as a *primary* signal:
+
+- `piste:difficulty=freeride` exists on only **~5,021 objects worldwide** (taginfo,
+  2.25% of difficulty-tagged pistes), vs ~116,099 `piste:type=downhill` ways.
+- It is a **subjective human label on specific named runs**, not a complete map of
+  skiable steep terrain. A resort with zero freeride-tagged ways is not flat — it is
+  *unmapped*. Across 294 resorts this produces **false zeros** and no basis for
+  normalization (a well-tagged resort would beat a terrain-identical under-mapped one).
+
+Conclusion: **the DEM computation stays the primary signal** (complete, normalizable, we
+own it). The freeride / `grooming=backcountry` tags come free in the OpenSkiMap `runs`
+layer, so they are used as a **near-zero-cost validation overlay** (see Outputs), not as
+the score.
+
 ## The three test resorts
 
 | Resort | Region | Province | Expected freeride character |
@@ -131,6 +147,13 @@ All under `experiments/terrain-spike/`, outputs to `experiments/terrain-spike/ou
 4. **Eyeball validation:** hillshade + slope-overlay PNGs and slope/aspect histograms per
    resort, sanity-checked against the known reality of each mountain (using Fatmap/resort
    maps by eye — they never touch the pipeline, so no ToS applies).
+
+5. **OSM freeride-tag overlay (free validation leg):** filter the OpenSkiMap `runs` layer
+   for `piste:difficulty=freeride` / `piste:grooming=backcountry` and overlay those run
+   geometries on the slope-overlay PNGs. Where such tags exist, our DEM-computed 30–45°
+   sweet-spot terrain should coincide with them — a cheap cross-check that the slope
+   computation points at the right places. Absence of tags is treated as "unmapped," never
+   as "no freeride terrain" (see "Why not OSM freeride tags alone?").
 
 ## Stack & testing
 
