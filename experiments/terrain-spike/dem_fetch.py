@@ -10,6 +10,8 @@ from config import DEM_DIR, LIDAR_DIR, utm_epsg
 COP_URL = ("https://copernicus-dem-30m.s3.amazonaws.com/"
            "Copernicus_DSM_COG_10_N{lat:02d}_00_E{lon:03d}_00_DEM/"
            "Copernicus_DSM_COG_10_N{lat:02d}_00_E{lon:03d}_00_DEM.tif")
+# Copernicus GLO-30 tiles don't declare nodata in metadata; 0 is the void sentinel.
+COPERNICUS_NODATA = 0
 
 
 def _cop_tiles(bbox):
@@ -22,7 +24,7 @@ def _cop_tiles(bbox):
     return urls
 
 
-def _read_clip_merge_4326(urls, bbox):
+def _read_clip_merge_4326(urls, bbox, retries=3):
     """Windowed-read each COG tile, clip to bbox, merge into one array."""
     datasets = []
     for url in urls:
@@ -37,7 +39,19 @@ def _read_clip_merge_4326(urls, bbox):
     if len(datasets) == 1:
         ds = datasets[0]
         win = from_bounds(*bbox, transform=ds.transform)
-        arr = ds.read(1, window=win)
+        last_err = None
+        for attempt in range(retries):
+            try:
+                arr = ds.read(1, window=win)
+                last_err = None
+                break
+            except Exception as e:
+                last_err = e
+                print(f"  read attempt {attempt+1} failed, retrying...")
+                ds.close()
+                ds = rasterio.open(f"/vsicurl/{urls[0]}")
+        if last_err:
+            raise last_err
         transform = ds.window_transform(win)
         profile = ds.profile.copy()
         ds.close()
@@ -60,15 +74,17 @@ def _reproject_to_utm(arr, transform, src_profile, dst_epsg, dest):
     dst_transform, dw, dh = calculate_default_transform(
         src_profile["crs"], dst_crs, w, h,
         *rasterio.transform.array_bounds(h, w, transform))
+    nodata = src_profile.get("nodata") if src_profile.get("nodata") is not None else COPERNICUS_NODATA
     dst = np.empty((dh, dw), dtype="float32")
     reproject(arr.astype("float32"), dst,
               src_transform=transform, src_crs=src_profile["crs"],
               dst_transform=dst_transform, dst_crs=dst_crs,
-              resampling=Resampling.bilinear)
+              resampling=Resampling.bilinear,
+              src_nodata=nodata, dst_nodata=nodata)
     DEM_DIR.mkdir(parents=True, exist_ok=True)
     with rasterio.open(dest, "w", driver="GTiff", height=dh, width=dw, count=1,
                        dtype="float32", crs=dst_crs, transform=dst_transform,
-                       nodata=src_profile.get("nodata")) as out:
+                       nodata=nodata) as out:
         out.write(dst, 1)
     return dest
 
