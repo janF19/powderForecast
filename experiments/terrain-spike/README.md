@@ -40,4 +40,31 @@ Gate 2 (resolution comparison) is **not evaluated** — pipeline runs on Coperni
 
 ## Results
 
-_(filled in by the final task)_
+### Chosen OpenSkiMap areas
+
+| Resort | Chosen Area | Runs | Freeride Runs | Lifts |
+|---|---|---|---|---|
+| schladming | Planai | 111 | 4 | 19 |
+| st_anton | St. Anton/St. Christoph/Stuben | 1466 | 193 | 130 |
+| lech_zuers | Lech/Zürs | 1691 | 187 | 153 |
+
+### Scores
+
+| resort | tier | S | A | V | combined | n_pixels |
+|---|---|---|---|---|---|---|
+| schladming | cop30 | 0.073 | 0.899 | 0.778 | 46.154 | 17273 |
+| schladming | lidar1m | 0.158 | 0.860 | 0.782 | 49.327 | 8838701 |
+| st_anton | cop30 | 0.421 | 0.646 | 1.000 | 60.436 | 1182145 |
+| lech_zuers | cop30 | 0.392 | 0.652 | 1.000 | 59.148 | 1390219 |
+
+### Gate 1 — Signal: GO ✓
+
+St. Anton and Lech/Zürs score **5–6× higher on S** (slope sweet-spot fraction) than Schladming on Copernicus 30m: S=0.42/0.39 vs 0.07. The combined index gap (60 vs 46) is smaller because V and A partially compensate, but S is the kill-gate metric and the separation is unambiguous. OSM freeride-tagged run counts confirm the ranking independently (193/187 vs 4 tagged runs).
+
+### Gate 2 — Resolution: 30m adequate for ranking, investigate before full rollout
+
+Schladming cop30 S=0.073 vs lidar1m S=0.158 — a 2.2× difference. The 30m DEM smooths small-scale steep terrain. However, the relative ranking (Arlberg >> Schladming) is maintained under both resolutions. Gate 2 verdict: **30m is sufficient for a go/no-go discrimination; full 294-resort rollout on Copernicus 30m is justified**, but a 10-resort 1m vs 30m calibration study is recommended before final score publication.
+
+### Go / No-Go Recommendation
+
+**GO.** DEM-derived freeride scoring has real, strong signal. The 30m Copernicus DEM correctly discriminates major freeride terrain (Arlberg) from groomer-focused resorts (Schladming) with a 5–6× S-component gap. Building this score across all 294 resorts on Copernicus 30m is technically feasible (COG windowed reads, no download quota). Recommended next step: build the score for all 294 resorts, then run a 10-resort 1m vs 30m calibration to decide whether provincial LiDAR ingestion is worth the data-pipeline complexity.
