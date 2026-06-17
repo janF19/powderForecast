@@ -1,8 +1,15 @@
 """Batch scorer: read resort_matches.json → fetch DEMs → write freeride_terrain.json."""
 import json
+import sys
+import io
 from datetime import datetime, timezone
 import numpy as np
 import rasterio
+
+# Ensure stdout handles full Unicode on Windows (cp1250 can't encode umlauts etc.)
+if hasattr(sys.stdout, "buffer"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+
 from rasterio.features import rasterize
 from shapely.ops import transform as shp_transform
 from pyproj import Transformer
