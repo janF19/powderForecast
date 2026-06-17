@@ -103,6 +103,5 @@ def run_batch(dry_run=False):
 
 
 if __name__ == "__main__":
-    import sys
     dry_run = "--dry-run" in sys.argv
     run_batch(dry_run=dry_run)
