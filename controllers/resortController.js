@@ -6,6 +6,7 @@ const { exec } = require('child_process');
 const os = require('os');
 const { buildResortPQI, pqiBand } = require('../utils/powderQuality');
 const { forecastDayLabel } = require('../utils/forecastDate');
+const { allFreerideScores } = require('../utils/freerideScore');
 
 
 
@@ -425,11 +426,11 @@ exports.calculateAllHistory = (req, res) => {
     // Construct the absolute path to the Python script
     const scriptPath = path.join(__dirname, '..', 'calculateAllHistory.py');
     const csvPath = path.join(__dirname, '..', 'filtered_weather_data.csv');
-    
+
     console.log('Executing Python script:', scriptPath);
     console.log('CSV path:', csvPath);
     console.log('Current working directory:', process.cwd());
-    
+
     // Check if the CSV file exists
     if (!fs.existsSync(csvPath)) {
         console.error('CSV file not found at path:', csvPath);
@@ -441,19 +442,19 @@ exports.calculateAllHistory = (req, res) => {
     console.log('Creating temporary virtual environment at:', tempVenvDir);
 
     // Create a virtual environment and install pandas
-    const setupCommand = `python3 -m venv ${tempVenvDir} && 
-                         ${tempVenvDir}/bin/pip install pandas && 
+    const setupCommand = `python3 -m venv ${tempVenvDir} &&
+                         ${tempVenvDir}/bin/pip install pandas &&
                          ${tempVenvDir}/bin/python "${scriptPath}" "${startDate}" "${endDate}" "${country}"`;
-    
+
     console.log('Running setup command:', setupCommand);
-    
+
     exec(setupCommand, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
         // Log all outputs for debugging
         console.log('Python stdout:', stdout);
         if (stderr) {
             console.error('Python stderr:', stderr);
         }
-        
+
         // Clean up the temporary virtual environment
         try {
             exec(`rm -rf ${tempVenvDir}`);
@@ -461,11 +462,11 @@ exports.calculateAllHistory = (req, res) => {
         } catch (cleanupError) {
             console.error('Error cleaning up virtual environment:', cleanupError);
         }
-        
+
         if (error) {
             console.error('Python script execution error:', error);
-            return res.status(500).json({ 
-                message: 'Error calculating snowfall', 
+            return res.status(500).json({
+                message: 'Error calculating snowfall',
                 error: error.message,
                 stderr: stderr
             });
@@ -478,7 +479,7 @@ exports.calculateAllHistory = (req, res) => {
 
             for (const line of lines) {
                 if (!line.startsWith('Location:')) continue;
-                
+
                 // Parse the line using more robust string manipulation
                 const parts = line.split(', ');
                 if (parts.length >= 4) {
@@ -501,10 +502,10 @@ exports.calculateAllHistory = (req, res) => {
             if (results.length > 0) {
                 res.json({ results });
             } else {
-                res.json({ 
-                    results: [], 
-                    message: country === 'all' 
-                        ? 'No data found for the specified dates.' 
+                res.json({
+                    results: [],
+                    message: country === 'all'
+                        ? 'No data found for the specified dates.'
                         : `No data found for ${country} in the specified dates.`
                 });
             }
@@ -516,4 +517,25 @@ exports.calculateAllHistory = (req, res) => {
             });
         }
     });
+};
+
+exports.getFreerideTerrain = async (req, res) => {
+  try {
+    const scores = allFreerideScores();
+    const resorts = Object.entries(scores)
+      .map(([resortName, s]) => ({
+        resort: resortName,
+        combined: s.combined,
+        S: s.S,
+        A: s.A,
+        V: s.V,
+        n_pixels: s.n_pixels,
+        ski_area_name: s.ski_area_name,
+      }))
+      .sort((a, b) => b.combined - a.combined);
+    res.render('freerideLeaderboard', { resorts });
+  } catch (error) {
+    console.error('Error loading freeride terrain:', error);
+    res.status(500).render('error', { error: 'Failed to load freeride terrain data' });
+  }
 };
