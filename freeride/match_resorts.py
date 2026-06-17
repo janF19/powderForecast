@@ -25,6 +25,7 @@ def _download_ski_areas():
 
 
 def _normalize(text: str) -> str:
+    # Strip all diacritics for fuzzy scoring
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c))
     return text.lower().strip()
@@ -78,8 +79,7 @@ def run_matching():
     if OVERRIDES_JSON.exists():
         with open(OVERRIDES_JSON, encoding="utf-8-sig") as f:
             raw_overrides = json.load(f)
-        import unicodedata as _ud
-        overrides = {_ud.normalize("NFC", k): v for k, v in raw_overrides.items()}
+        overrides = {unicodedata.normalize("NFC", k): v for k, v in raw_overrides.items()}
 
     features = _load_ski_areas()
     # Pre-extract all ski-area names
@@ -90,6 +90,7 @@ def run_matching():
     flagged = []
 
     for resort in resort_names:
+        # NFC normalizes precomposed/decomposed forms for override key lookup
         resort_nfc = unicodedata.normalize("NFC", resort)
         if resort_nfc in overrides:
             results[resort] = {
@@ -142,7 +143,7 @@ def run_matching():
         for r in flagged:
             cands = results[r].get("candidates", [])
             best = cands[0]["name"] if cands else "none"
-            print(f"  {r!r}  →  best guess: {best!r}")
+            print(f"  {r!r}  ->  best guess: {best!r}")
 
     return results
 
