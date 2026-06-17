@@ -1,0 +1,3338 @@
+{
+  "Alpendorf (Ski amedé)": {
+    "status": "override",
+    "ski_area_name": "Alpendorf (Ski amadé)",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Oberau (Wildschönau)": {
+    "status": "auto",
+    "ski_area_name": "Ski Juwel - Oberau (Wildschönau)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Ski Juwel - Oberau (Wildschönau)",
+        "score": 3
+      },
+      {
+        "name": "Zugspitzland Loipen (Eschenlohe, Oberau, Farchant)",
+        "score": 1
+      },
+      {
+        "name": "Ski Juwel Alpbachtal-Wildschönau",
+        "score": 1
+      }
+    ]
+  },
+  "Dachstein West": {
+    "status": "auto",
+    "ski_area_name": "Skiregion Dachstein West",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skiregion Dachstein West",
+        "score": 1
+      }
+    ]
+  },
+  "Kobla-Bohinj": {
+    "status": "override",
+    "ski_area_name": "Kobla",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Aillons-Margériaz": {
+    "status": "auto",
+    "ski_area_name": "Aillon-Margériaz",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Aillon-Margériaz",
+        "score": 1
+      }
+    ]
+  },
+  "Kaiseregg-​Riggisalp-Schwarzsee": {
+    "status": "auto",
+    "ski_area_name": "Schwarzsee",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Schwarzsee",
+        "score": 1
+      }
+    ]
+  },
+  "St. Pierre de Chartreuse-Le Planolet": {
+    "status": "override",
+    "ski_area_name": "Saint-Pierre-de-Chartreuse",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Buchenberg-Buching-Halblech-": {
+    "status": "auto",
+    "ski_area_name": "Buchenberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Buchenberg",
+        "score": 1
+      }
+    ]
+  },
+  "Méribel (Les 3 Vallées)": {
+    "status": "override",
+    "ski_area_name": "Les 3 Vallées",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "​Les Menuires (Les 3 Vallées)": {
+    "status": "override",
+    "ski_area_name": "Les 3 Vallées",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Les Sybelles-Le Corbier-​La Toussuire-​Les Bottières-​St Colomban des Villards-​St Sorlin-​St Jean d’Arves": {
+    "status": "auto",
+    "ski_area_name": "Saint Jean d'Arves - Les Chambons (Les Sybelles)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Saint Jean d'Arves - Les Chambons (Les Sybelles)",
+        "score": 1
+      },
+      {
+        "name": "Les Sybelles",
+        "score": 1
+      }
+    ]
+  },
+  "Le Grand Massif-Flaine-​Les Carroz-​Morillon-​Samoëns-​Sixt": {
+    "status": "auto",
+    "ski_area_name": "Le Grand Massif",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Le Grand Massif",
+        "score": 1
+      }
+    ]
+  },
+  "Megève-​Saint-Gervais": {
+    "status": "auto",
+    "ski_area_name": "Megève Véry",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Megève Véry",
+        "score": 1
+      },
+      {
+        "name": "Megève",
+        "score": 1
+      },
+      {
+        "name": "Les Houches - Saint-Gervais",
+        "score": 1
+      }
+    ]
+  },
+  "Laax-​Flims-​Falera": {
+    "status": "auto",
+    "ski_area_name": "Laax",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Laax",
+        "score": 1
+      }
+    ]
+  },
+  "Vars-​Risoul-La Forêt Blanche": {
+    "status": "override",
+    "ski_area_name": "Forêt Blanche : Vars/Risoul",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Kicking Horse": {
+    "status": "auto",
+    "ski_area_name": "Kicking Horse Resort",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kicking Horse Resort",
+        "score": 1
+      }
+    ]
+  },
+  "Le Grand Domaine-Valmorel-​Doucy-​Celliers-​St François Longchamp": {
+    "status": "auto",
+    "ski_area_name": "Valmorel",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Valmorel",
+        "score": 1
+      },
+      {
+        "name": "Le Grand Domaine",
+        "score": 1
+      }
+    ]
+  },
+  "Galibier Thabor-Valmeinier-​Valloire": {
+    "status": "override",
+    "ski_area_name": "Valloire - Galibier Thabor",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Zillertal Arena-Zell am Ziller-​Gerlos-​Königsleiten-​Hochkrimml": {
+    "status": "auto",
+    "ski_area_name": "Zillertal Arena",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Zillertal Arena",
+        "score": 1
+      },
+      {
+        "name": "Fürstalm (Zillertal Arena)",
+        "score": 1
+      }
+    ]
+  },
+  "Auron-Saint-Etienne-de-Tinée-": {
+    "status": "auto",
+    "ski_area_name": "Auron Saint-Etienne-de-Tinée",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Auron Saint-Etienne-de-Tinée",
+        "score": 4
+      },
+      {
+        "name": "Saint-Paul-sur-Ubaye",
+        "score": 1
+      },
+      {
+        "name": "Domaine Skiable Saint-Léger-Les-Mélèzes",
+        "score": 1
+      }
+    ]
+  },
+  "Alta Badia": {
+    "status": "auto",
+    "ski_area_name": "Alta Badia",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Alta Badia",
+        "score": 1
+      }
+    ]
+  },
+  "La Clusaz-​Manigod": {
+    "status": "auto",
+    "ski_area_name": "La Clusaz",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "La Clusaz",
+        "score": 1
+      }
+    ]
+  },
+  "Espace Villard Corrençon-Villard-de-Lans-​Corrençon-en-Vercors": {
+    "status": "auto",
+    "ski_area_name": "Villard de Lans - Corrençon",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Villard de Lans - Corrençon",
+        "score": 2
+      },
+      {
+        "name": "Lans en Vercors",
+        "score": 2
+      },
+      {
+        "name": "Gresse en Vercors",
+        "score": 1
+      }
+    ]
+  },
+  "Val Cenis-Lanslevillard-​Lanslebourg-​Termignon": {
+    "status": "auto",
+    "ski_area_name": "Le Val d'Ambin (Val Cenis)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Le Val d'Ambin (Val Cenis)",
+        "score": 1
+      },
+      {
+        "name": "Sardières (Val Cenis)",
+        "score": 1
+      },
+      {
+        "name": "Val Cenis",
+        "score": 1
+      }
+    ]
+  },
+  "Isola 2000": {
+    "status": "auto",
+    "ski_area_name": "Isola 2000",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Isola 2000",
+        "score": 1
+      }
+    ]
+  },
+  "Obersaxen-​Mundaun-​Val Lumnezia": {
+    "status": "auto",
+    "ski_area_name": "Obersaxen",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Obersaxen",
+        "score": 1
+      }
+    ]
+  },
+  "Les 7 Laux-Prapoutel-​Le Pleynet-​Pipay": {
+    "status": "auto",
+    "ski_area_name": "Les 7 Laux",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les 7 Laux",
+        "score": 1
+      }
+    ]
+  },
+  "Corvatsch-​Furtschellas": {
+    "status": "auto",
+    "ski_area_name": "Corvatsch-Furtschellas",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Corvatsch-Furtschellas",
+        "score": 1
+      }
+    ]
+  },
+  "Nassfeld-Hermagor": {
+    "status": "override",
+    "ski_area_name": "Nassfeld - Hermagor",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Mondolè Ski-Artesina-​Frabosa Soprana-​Prato Nevoso": {
+    "status": "auto",
+    "ski_area_name": "Artesina",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Artesina",
+        "score": 1
+      }
+    ]
+  },
+  "Aletsch Arena-Riederalp-​Bettmeralp-​Fiesch Eggishorn": {
+    "status": "auto",
+    "ski_area_name": "Aletsch Arena",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Aletsch Arena",
+        "score": 1
+      }
+    ]
+  },
+  "Bad Kleinkirchheim-​St. Oswald": {
+    "status": "auto",
+    "ski_area_name": "Bad Kleinkirchheim",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Bad Kleinkirchheim",
+        "score": 1
+      },
+      {
+        "name": "Skigebiet Bad Kleinkirchheim",
+        "score": 1
+      }
+    ]
+  },
+  "Bardonecchia": {
+    "status": "auto",
+    "ski_area_name": "Bardonecchia - Jafferau",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Bardonecchia - Jafferau",
+        "score": 1
+      },
+      {
+        "name": "Bardonecchia",
+        "score": 1
+      }
+    ]
+  },
+  "Saint-Lary-Soulan": {
+    "status": "auto",
+    "ski_area_name": "Saint Lary-Soulan",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Saint Lary-Soulan",
+        "score": 3
+      },
+      {
+        "name": "Saint-Lary",
+        "score": 2
+      },
+      {
+        "name": "Saint-Paul-sur-Ubaye",
+        "score": 1
+      }
+    ]
+  },
+  "Orcières Merlette 1850": {
+    "status": "override",
+    "ski_area_name": "Orcières Merlette",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Dévoluy-Superdévoluy-​La Joue du Loup": {
+    "status": "auto",
+    "ski_area_name": "Dévoluy",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Dévoluy",
+        "score": 1
+      }
+    ]
+  },
+  "Grand Tourmalet-​Pic du Midi-La Mongie-​Barèges": {
+    "status": "auto",
+    "ski_area_name": "Grand Tourmalet",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Grand Tourmalet",
+        "score": 1
+      }
+    ]
+  },
+  "Parsenn (Davos Klosters)": {
+    "status": "auto",
+    "ski_area_name": "Parsenn",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Parsenn",
+        "score": 1
+      }
+    ]
+  },
+  "Alto Sangro-Roccaraso-​Rivisondoli": {
+    "status": "auto",
+    "ski_area_name": "Roccaraso - Rivisondoli",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Roccaraso - Rivisondoli",
+        "score": 1
+      }
+    ]
+  },
+  "Chamrousse": {
+    "status": "auto",
+    "ski_area_name": "Domaine Skiable Chamrousse",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Domaine Skiable Chamrousse",
+        "score": 1
+      },
+      {
+        "name": "Chamrousse",
+        "score": 1
+      }
+    ]
+  },
+  "Valberg-​Beuil les Launes": {
+    "status": "auto",
+    "ski_area_name": "Domaine skiable Valberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Domaine skiable Valberg",
+        "score": 1
+      }
+    ]
+  },
+  "Adelboden-​Lenk-Chuenisbärgli-​Silleren-​Hahnenmoos-​Metsch": {
+    "status": "auto",
+    "ski_area_name": "Adelboden - TschentenAlp",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Adelboden - TschentenAlp",
+        "score": 1
+      },
+      {
+        "name": "Adelboden - Lenk",
+        "score": 1
+      }
+    ]
+  },
+  "Rinderberg-​Saanerslochgrat-​Horneggli-Zweisimmen-​Saanenmöser-​Schönried-​St. Stephan": {
+    "status": "auto",
+    "ski_area_name": "Schönried - Saanenmöser - Zweisimmen - St. Stephan",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Schönried - Saanenmöser - Zweisimmen - St. Stephan",
+        "score": 1
+      }
+    ]
+  },
+  "Le Grand Bornand": {
+    "status": "override",
+    "ski_area_name": "Le Grand-Bornand",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Kaltenbach-Hochzillertal-​Hochfügen-SKi-optimal-": {
+    "status": "override",
+    "ski_area_name": "Hochzillertal - Kaltenbach",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Grimentz-​Zinal": {
+    "status": "auto",
+    "ski_area_name": "Zinal / Grimentz",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Zinal / Grimentz",
+        "score": 1
+      }
+    ]
+  },
+  "Civetta-Alleghe-​Selva di Cadore-​Palafavera-​Zoldo": {
+    "status": "auto",
+    "ski_area_name": "Ski Civetta",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Civetta",
+        "score": 1
+      }
+    ]
+  },
+  "Ax les Thermes": {
+    "status": "override",
+    "ski_area_name": "Ax-les-Thermes",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Damüls Mellau": {
+    "status": "override",
+    "ski_area_name": "Skigebiet Damüls-Mellau",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Zell am See": {
+    "status": "auto",
+    "ski_area_name": "Schmittenhöhe Zell am See",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Schmittenhöhe Zell am See",
+        "score": 1
+      }
+    ]
+  },
+  "Puy St. Vincent": {
+    "status": "override",
+    "ski_area_name": "Puy Saint-Vincent",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Folgaria-​Fiorentini": {
+    "status": "auto",
+    "ski_area_name": "Folgaria, Area sciistica Folgaria",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Folgaria, Area sciistica Folgaria",
+        "score": 1
+      }
+    ]
+  },
+  "Titlis-Engelberg": {
+    "status": "auto",
+    "ski_area_name": "Engelberg - Ristis-Brunni",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Engelberg - Ristis-Brunni",
+        "score": 1
+      },
+      {
+        "name": "Skipisten Titlis Bergbahnen",
+        "score": 1
+      }
+    ]
+  },
+  "Nauders am Reschenpass-Bergkastel": {
+    "status": "auto",
+    "ski_area_name": "Nauders Bergkastel",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Nauders Bergkastel",
+        "score": 1
+      }
+    ]
+  },
+  "Grossarltal-​Dorfgastein": {
+    "status": "override",
+    "ski_area_name": "Dorfgastein - Großarltal",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Katschberg": {
+    "status": "auto",
+    "ski_area_name": "Katschberg-Aineck",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Katschberg-Aineck",
+        "score": 1
+      }
+    ]
+  },
+  "Valfréjus": {
+    "status": "auto",
+    "ski_area_name": "Valfréjus",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Valfréjus",
+        "score": 1
+      }
+    ]
+  },
+  "Savognin": {
+    "status": "auto",
+    "ski_area_name": "Savognin",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Savognin",
+        "score": 1
+      },
+      {
+        "name": "Savognin",
+        "score": 1
+      }
+    ]
+  },
+  "Scuol-Motta Naluns": {
+    "status": "auto",
+    "ski_area_name": "Scuol Motta Naluns",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Scuol Motta Naluns",
+        "score": 2
+      }
+    ]
+  },
+  "Passo San Pellegrino-​Falcade": {
+    "status": "override",
+    "ski_area_name": "San Pellegrino - Falcade",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Piau Engaly": {
+    "status": "override",
+    "ski_area_name": "Piau-Engaly",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Flumserberg": {
+    "status": "auto",
+    "ski_area_name": "Flumserberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Flumserberg",
+        "score": 1
+      }
+    ]
+  },
+  "Super Sauze": {
+    "status": "override",
+    "ski_area_name": "Sauze-Super Sauze",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "La Norma": {
+    "status": "auto",
+    "ski_area_name": "La Norma",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "La Norma",
+        "score": 1
+      }
+    ]
+  },
+  "Arabba": {
+    "status": "auto",
+    "ski_area_name": "Arabba",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Arabba",
+        "score": 1
+      }
+    ]
+  },
+  "Wildkogel-Neukirchen-​Bramberg": {
+    "status": "override",
+    "ski_area_name": "Wildkogel Arena",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Hintertux Glacier": {
+    "status": "override",
+    "ski_area_name": "Hintertuxer Gletscher",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Disentis 3000": {
+    "status": "override",
+    "ski_area_name": "Disentis/Mustér",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Belalp-Blatten": {
+    "status": "auto",
+    "ski_area_name": "Belalp",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Belalp",
+        "score": 1
+      }
+    ]
+  },
+  "San Martino di Castrozza": {
+    "status": "auto",
+    "ski_area_name": "San Martino di Castrozza",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "San Martino di Castrozza",
+        "score": 1
+      },
+      {
+        "name": "San Martino di Castrozza - Passo Rolle",
+        "score": 1
+      }
+    ]
+  },
+  "Meiringen-Hasliberg": {
+    "status": "auto",
+    "ski_area_name": "Meiringen - Hasliberg",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Meiringen - Hasliberg",
+        "score": 2
+      }
+    ]
+  },
+  "Toggenburg-Wildhaus-​Unterwasser-​Alt St. Johann": {
+    "status": "auto",
+    "ski_area_name": "Wildhaus",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Wildhaus",
+        "score": 1
+      },
+      {
+        "name": "Toggenburg Ski Center",
+        "score": 1
+      }
+    ]
+  },
+  "Alpe di Siusi-Seiser Alm-": {
+    "status": "auto",
+    "ski_area_name": "Seiser Alm - Mont de Sëuc - Alpe di Siusi, Seiser Alm, Alpe di Siusi, Mont de Sëuc",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Seiser Alm - Mont de Sëuc - Alpe di Siusi, Seiser Alm, Alpe di Siusi, Mont de Sëuc",
+        "score": 2
+      }
+    ]
+  },
+  "Le Lioran": {
+    "status": "auto",
+    "ski_area_name": "Le Lioran",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Le Lioran",
+        "score": 1
+      }
+    ]
+  },
+  "Saint Luc-​Chandolin-Anniviers-": {
+    "status": "override",
+    "ski_area_name": "Saint-Luc Chandolin",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Les Karellis": {
+    "status": "auto",
+    "ski_area_name": "Les Karellis",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Karellis",
+        "score": 1
+      }
+    ]
+  },
+  "Peyragudes": {
+    "status": "auto",
+    "ski_area_name": "Peyragudes",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Peyragudes",
+        "score": 1
+      }
+    ]
+  },
+  "Leysin": {
+    "status": "auto",
+    "ski_area_name": "Leysin (Les Mosses, La Lecherette)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Leysin (Les Mosses, La Lecherette)",
+        "score": 1
+      },
+      {
+        "name": "Leysin",
+        "score": 1
+      }
+    ]
+  },
+  "Ponte di Legno-Passo ​Tonale-​Presena Glacier-​Temù-Pontedilegno-Tonale-": {
+    "status": "auto",
+    "ski_area_name": "Ponte di Legno - Passo Tonale",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Ponte di Legno - Passo Tonale",
+        "score": 2
+      }
+    ]
+  },
+  "Eggli-​La Videmanette-Gstaad-​Saanen-​Rougemont": {
+    "status": "override",
+    "ski_area_name": "Gstaad - Saanen - Rougemont",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Anzère": {
+    "status": "auto",
+    "ski_area_name": "Anzère",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Anzère",
+        "score": 1
+      }
+    ]
+  },
+  "Font-Romeu-​Bolquère Pyrénées 2000": {
+    "status": "auto",
+    "ski_area_name": "Font-Romeu Pyrénées 2000, Font-Romeu",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Font-Romeu Pyrénées 2000, Font-Romeu",
+        "score": 2
+      },
+      {
+        "name": "Skigebiet Fontanella-Faschina",
+        "score": 1
+      },
+      {
+        "name": "Font d'Urle Chaud Clapier",
+        "score": 1
+      }
+    ]
+  },
+  "Brévent-​Flégère-Chamonix-": {
+    "status": "auto",
+    "ski_area_name": "Brévent/Flégère (Chamonix)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Brévent/Flégère (Chamonix)",
+        "score": 2
+      },
+      {
+        "name": "Les Planards (Chamonix)",
+        "score": 1
+      },
+      {
+        "name": "Le Tourchet (Chamonix)",
+        "score": 1
+      }
+    ]
+  },
+  "Les Houches-​Saint-Gervais-Prarion-​Bellevue-Chamonix-": {
+    "status": "auto",
+    "ski_area_name": "Les Houches - Saint-Gervais",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Les Houches - Saint-Gervais",
+        "score": 2
+      },
+      {
+        "name": "Les Planards (Chamonix)",
+        "score": 1
+      },
+      {
+        "name": "Brévent/Flégère (Chamonix)",
+        "score": 1
+      }
+    ]
+  },
+  "Belvedere-​Col Rodella-​Ciampac-​Buffaure-Canazei-​Campitello-​Alba-​Pozza di Fassa": {
+    "status": "auto",
+    "ski_area_name": "Macugnaga - Belvedere",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Macugnaga - Belvedere",
+        "score": 1
+      },
+      {
+        "name": "Belvedere - Col Rodella - Passo Pordoi",
+        "score": 1
+      }
+    ]
+  },
+  "Lauchernalp-Lötschental": {
+    "status": "auto",
+    "ski_area_name": "Lauchernalp",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Lauchernalp",
+        "score": 1
+      }
+    ]
+  },
+  "Grossglockner Heiligenblut": {
+    "status": "override",
+    "ski_area_name": "Heiligenblut am Großglockner",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Brandnertal-Brand-​Bürserberg": {
+    "status": "auto",
+    "ski_area_name": "Brandnertal – Brand/​Bürserberg",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Brandnertal – Brand/​Bürserberg",
+        "score": 3
+      },
+      {
+        "name": "Kienleiten - Brandenberg",
+        "score": 1
+      },
+      {
+        "name": "Brandtnerlifte",
+        "score": 1
+      }
+    ]
+  },
+  "Alpe du Grand-Serre-La Morte": {
+    "status": "auto",
+    "ski_area_name": "L'Alpe du Grand Serre",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "L'Alpe du Grand Serre",
+        "score": 2
+      },
+      {
+        "name": "Site Nordique de Serre Chevalier",
+        "score": 1
+      },
+      {
+        "name": "Serre Eyraud",
+        "score": 1
+      }
+    ]
+  },
+  "Les Angles": {
+    "status": "auto",
+    "ski_area_name": "Les Angles",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Angles",
+        "score": 1
+      },
+      {
+        "name": "Les Angles, Els Angles",
+        "score": 1
+      }
+    ]
+  },
+  "Aussois": {
+    "status": "auto",
+    "ski_area_name": "Aussois",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Aussois",
+        "score": 1
+      }
+    ]
+  },
+  "First-Grindelwald": {
+    "status": "auto",
+    "ski_area_name": "Grindelwald First",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Grindelwald First",
+        "score": 2
+      },
+      {
+        "name": "Grindelwald - Männlichen (Schlittelpiste)",
+        "score": 1
+      },
+      {
+        "name": "Grindelwald - Wengen (Kleine Scheidegg - Männlichen)",
+        "score": 1
+      }
+    ]
+  },
+  "Sörenberg-Rothorn-​Dorf": {
+    "status": "auto",
+    "ski_area_name": "Sörenberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Sörenberg",
+        "score": 1
+      }
+    ]
+  },
+  "Riserva Bianca-Limone Piemonte": {
+    "status": "auto",
+    "ski_area_name": "Riserva Bianca",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Riserva Bianca",
+        "score": 1
+      }
+    ]
+  },
+  "Gitschberg Jochtal": {
+    "status": "auto",
+    "ski_area_name": "Gitschberg Jochtal, Rio Pusteria",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gitschberg Jochtal, Rio Pusteria",
+        "score": 1
+      }
+    ]
+  },
+  "Schilthorn-Mürren-​Lauterbrunnen": {
+    "status": "auto",
+    "ski_area_name": "Mürren/Schilthorn",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Mürren/Schilthorn",
+        "score": 2
+      }
+    ]
+  },
+  "Pila": {
+    "status": "override",
+    "ski_area_name": "Pila ski",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Brigels-​Waltensburg-​Andiast": {
+    "status": "auto",
+    "ski_area_name": "Brigels-Waltensburg-Andiast, Brigels-Waltenburg-Andiast, Breil-Vuorz-Andiast",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Brigels-Waltensburg-Andiast, Brigels-Waltenburg-Andiast, Breil-Vuorz-Andiast",
+        "score": 1
+      }
+    ]
+  },
+  "Aprica": {
+    "status": "auto",
+    "ski_area_name": "Aprica",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Aprica",
+        "score": 1
+      }
+    ]
+  },
+  "Bormio-Cima Bianca": {
+    "status": "auto",
+    "ski_area_name": "Bormio Ski",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Bormio Ski",
+        "score": 1
+      }
+    ]
+  },
+  "Sedrun-Oberalp": {
+    "status": "override",
+    "ski_area_name": "Sedrun Oberalp",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Grosseck-​Speiereck-Mauterndorf-​St. Michael": {
+    "status": "override",
+    "ski_area_name": "Grosseck-Speiereck",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Hirmentaz-​Les Habères-Bellevaux-​Habère-Poche": {
+    "status": "auto",
+    "ski_area_name": "Hirmentaz - Les Habères",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Hirmentaz - Les Habères",
+        "score": 1
+      }
+    ]
+  },
+  "Pragelato": {
+    "status": "auto",
+    "ski_area_name": "Pragelato",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Pragelato",
+        "score": 1
+      },
+      {
+        "name": "Pragelato",
+        "score": 1
+      }
+    ]
+  },
+  "Porté Puymorens": {
+    "status": "override",
+    "ski_area_name": "Porté-Puymorens",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Mythenregion": {
+    "status": "override",
+    "ski_area_name": "Mythenregion Schwyz",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Zugspitze": {
+    "status": "auto",
+    "ski_area_name": "Gletscher-Skigebiet Zugspitze, Ski resort Zugspitze",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gletscher-Skigebiet Zugspitze, Ski resort Zugspitze",
+        "score": 1
+      }
+    ]
+  },
+  "Jasná Nízke Tatry-Chopok": {
+    "status": "auto",
+    "ski_area_name": "Chopok Jasná",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Chopok Jasná",
+        "score": 1
+      },
+      {
+        "name": "Chopok Juh",
+        "score": 1
+      }
+    ]
+  },
+  "Steinplatte-​Winklmoosalm-Waidring-​Reit im Winkl": {
+    "status": "auto",
+    "ski_area_name": "Steinplatte Waidring-Tirol",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Steinplatte Waidring-Tirol",
+        "score": 2
+      },
+      {
+        "name": "Hausberglift - Waidring",
+        "score": 1
+      }
+    ]
+  },
+  "Rigi": {
+    "status": "auto",
+    "ski_area_name": "Rigi",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Rigi",
+        "score": 1
+      },
+      {
+        "name": "Rigi Seebodenalp",
+        "score": 1
+      },
+      {
+        "name": "Rigi-Scheidegg",
+        "score": 1
+      }
+    ]
+  },
+  "Métabief": {
+    "status": "auto",
+    "ski_area_name": "Metabief - Mont d'or",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Metabief - Mont d'or",
+        "score": 1
+      }
+    ]
+  },
+  "Latemar-Obereggen-​Pampeago-​Predazzo": {
+    "status": "auto",
+    "ski_area_name": "Latemar Dolomites",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Latemar Dolomites",
+        "score": 1
+      }
+    ]
+  },
+  "Mariborsko Pohorje-Maribor": {
+    "status": "auto",
+    "ski_area_name": "Smučišča Mariborsko Pohorje",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Smučišča Mariborsko Pohorje",
+        "score": 2
+      }
+    ]
+  },
+  "Praz de Lys-​Sommand-Taninges-​Mieussy-": {
+    "status": "auto",
+    "ski_area_name": "Praz de Lys Sommand",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Praz de Lys Sommand",
+        "score": 1
+      }
+    ]
+  },
+  "Espace Dôle-La Dôle-​Les Tuffes": {
+    "status": "override",
+    "ski_area_name": "La Dôle",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Kreischberg": {
+    "status": "auto",
+    "ski_area_name": "Kreischberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kreischberg",
+        "score": 1
+      }
+    ]
+  },
+  "Garmisch-Classic-Garmisch-Partenkirchen": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Garmisch-Classic",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Skigebiet Garmisch-Classic",
+        "score": 2
+      },
+      {
+        "name": "Garmisch Loipen",
+        "score": 1
+      },
+      {
+        "name": "Garmisch - Wank",
+        "score": 1
+      }
+    ]
+  },
+  "Aiguille du Midi-Chamonix-": {
+    "status": "auto",
+    "ski_area_name": "Aiguille du Midi (Chamonix)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Aiguille du Midi (Chamonix)",
+        "score": 2
+      },
+      {
+        "name": "Les Planards (Chamonix)",
+        "score": 1
+      },
+      {
+        "name": "Brévent/Flégère (Chamonix)",
+        "score": 1
+      }
+    ]
+  },
+  "Carezza Ski": {
+    "status": "override",
+    "ski_area_name": "Carezza - Karersee",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Pizol-Bad Ragaz-​Wangs": {
+    "status": "auto",
+    "ski_area_name": "Pizol",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Pizol",
+        "score": 1
+      }
+    ]
+  },
+  "SuperBesse-Puy de Sancy": {
+    "status": "override",
+    "ski_area_name": "Super Besse",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Fellhorn-​Kanzelwand-Oberstdorf-​Riezlern": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Fellhorn/Kanzelwand",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Fellhorn/Kanzelwand",
+        "score": 1
+      }
+    ]
+  },
+  "Großglockner Resort Kals-Matrei": {
+    "status": "auto",
+    "ski_area_name": "Kals-Matrei",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kals-Matrei",
+        "score": 1
+      }
+    ]
+  },
+  "Abetone-​Val di Luce": {
+    "status": "auto",
+    "ski_area_name": "Area Sciistica Abetone",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Area Sciistica Abetone",
+        "score": 1
+      }
+    ]
+  },
+  "Gerlitzen": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Gerlitzen Alpe",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Gerlitzen Alpe",
+        "score": 1
+      }
+    ]
+  },
+  "Paganella-Andalo": {
+    "status": "auto",
+    "ski_area_name": "Paganella, Area sciistica Andalo Fai della Paganella",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Paganella, Area sciistica Andalo Fai della Paganella",
+        "score": 2
+      }
+    ]
+  },
+  "Melchsee-Frutt-Kerns-": {
+    "status": "auto",
+    "ski_area_name": "Melchsee-Frutt",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Melchsee-Frutt",
+        "score": 2
+      }
+    ]
+  },
+  "Arêches-Beaufort-": {
+    "status": "auto",
+    "ski_area_name": "Arêches Beaufort",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Arêches Beaufort",
+        "score": 2
+      }
+    ]
+  },
+  "Špindlerův Mlýn": {
+    "status": "auto",
+    "ski_area_name": "Skiareál Špindlerův Mlýn - Medvědín",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skiareál Špindlerův Mlýn - Medvědín",
+        "score": 1
+      },
+      {
+        "name": "Špindlerův Mlýn - Labská",
+        "score": 1
+      }
+    ]
+  },
+  "Les Mosses-​La Lécherette": {
+    "status": "auto",
+    "ski_area_name": "Leysin (Les Mosses, La Lecherette)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Leysin (Les Mosses, La Lecherette)",
+        "score": 1
+      },
+      {
+        "name": "Les Mosses",
+        "score": 1
+      }
+    ]
+  },
+  "Cimone-Montecreto-​Sestola-​Le Polle": {
+    "status": "auto",
+    "ski_area_name": "Cimone, Area sciistica Monte Cimone",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Cimone, Area sciistica Monte Cimone",
+        "score": 1
+      },
+      {
+        "name": "Monte Cimone",
+        "score": 1
+      }
+    ]
+  },
+  "Luchon Superbagnères": {
+    "status": "override",
+    "ski_area_name": "Superbagnères",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Lélex-​Crozet": {
+    "status": "override",
+    "ski_area_name": "Lélex Crozet",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Gourette-Eaux Bonnes-": {
+    "status": "auto",
+    "ski_area_name": "Gourette",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gourette",
+        "score": 1
+      }
+    ]
+  },
+  "Rauriser Hochalmbahnen-Rauris": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Raurisertal",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Raurisertal",
+        "score": 1
+      }
+    ]
+  },
+  "Hoch-Ybrig-Unteriberg-​Oberiberg": {
+    "status": "auto",
+    "ski_area_name": "Hoch-Ybrig",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Hoch-Ybrig",
+        "score": 2
+      },
+      {
+        "name": "Sattel-Hochstuckli",
+        "score": 1
+      },
+      {
+        "name": "Hochkar",
+        "score": 1
+      }
+    ]
+  },
+  "Meran 2000": {
+    "status": "auto",
+    "ski_area_name": "Meran 2000",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Meran 2000",
+        "score": 1
+      }
+    ]
+  },
+  "Nätschen-Andermatt": {
+    "status": "override",
+    "ski_area_name": "Andermatt Gemsstock",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Albiez-Montrond": {
+    "status": "auto",
+    "ski_area_name": "Albiez-Montrond",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Albiez-Montrond",
+        "score": 3
+      }
+    ]
+  },
+  "Tarvisio-Monte Lussari": {
+    "status": "auto",
+    "ski_area_name": "Tarvisio, Tarvis",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Tarvisio, Tarvis",
+        "score": 1
+      }
+    ]
+  },
+  "Moelltal Glacier-Mölltaler Gletscher-": {
+    "status": "auto",
+    "ski_area_name": "Mölltaler Gletscher",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Mölltaler Gletscher",
+        "score": 1
+      }
+    ]
+  },
+  "Wendelstein-Brannenburg-​Osterhofen": {
+    "status": "auto",
+    "ski_area_name": "Wendelstein",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Wendelstein",
+        "score": 1
+      }
+    ]
+  },
+  "Sulden am Ortler-Solda all'Ortles-": {
+    "status": "override",
+    "ski_area_name": "Solda - Sulden am Ortler",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Hinterstoder-Höss": {
+    "status": "auto",
+    "ski_area_name": "Hinterstoder",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Hinterstoder",
+        "score": 1
+      }
+    ]
+  },
+  "St. Jean Montclar": {
+    "status": "override",
+    "ski_area_name": "Saint-Jean-Montclar",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Feldberg-Seebuck-​Grafenmatt-​Fahl": {
+    "status": "auto",
+    "ski_area_name": "Feldberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Feldberg",
+        "score": 1
+      }
+    ]
+  },
+  "Pitztal Glacier-Pitztaler Gletscher-": {
+    "status": "auto",
+    "ski_area_name": "Pitztaler Gletscher",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Pitztaler Gletscher",
+        "score": 1
+      }
+    ]
+  },
+  "Tauplitz-Bad Mitterndorf": {
+    "status": "auto",
+    "ski_area_name": "Tauplitz / Bad Mitterndorf",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Tauplitz / Bad Mitterndorf",
+        "score": 2
+      }
+    ]
+  },
+  "Hochoetz-Oetz": {
+    "status": "auto",
+    "ski_area_name": "Hochoetz",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Hochoetz",
+        "score": 2
+      },
+      {
+        "name": "Hochoetz-Kühtai",
+        "score": 2
+      }
+    ]
+  },
+  "Rosshütte-Seefeld": {
+    "status": "auto",
+    "ski_area_name": "Seefeld - Rosshütte",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Seefeld - Rosshütte",
+        "score": 2
+      },
+      {
+        "name": "Langlauf Region Seefeld",
+        "score": 1
+      },
+      {
+        "name": "Seefeld / Birkenlift & Geigenbühellift",
+        "score": 1
+      }
+    ]
+  },
+  "Špičák": {
+    "status": "auto",
+    "ski_area_name": "Deštné - Na Špičáku",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Deštné - Na Špičáku",
+        "score": 1
+      },
+      {
+        "name": "Železná Ruda (Špičák, Nad Nádražím)",
+        "score": 1
+      },
+      {
+        "name": "Ski&Bike Špičák",
+        "score": 1
+      }
+    ]
+  },
+  "Riesneralm-Donnersbachwald": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Riesneralm - Donnersbachwald",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Skigebiet Riesneralm - Donnersbachwald",
+        "score": 2
+      }
+    ]
+  },
+  "Berwang-​Bichlbach-​Rinnen": {
+    "status": "auto",
+    "ski_area_name": "Oberwangen",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Oberwangen",
+        "score": 1
+      },
+      {
+        "name": "Berwang",
+        "score": 1
+      }
+    ]
+  },
+  "Glungezer-Tulfes": {
+    "status": "auto",
+    "ski_area_name": "Glungezer",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Glungezer",
+        "score": 1
+      }
+    ]
+  },
+  "Fanningberg": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Fanningberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Fanningberg",
+        "score": 1
+      }
+    ]
+  },
+  "Turracher Höhe": {
+    "status": "auto",
+    "ski_area_name": "Turracher Höhe",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Turracher Höhe",
+        "score": 1
+      },
+      {
+        "name": "Turracher Höhe",
+        "score": 1
+      }
+    ]
+  },
+  "Niedere-Andelsbuch-​Bezau": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Niedere (Andelsbuch-Bezau)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Skigebiet Niedere (Andelsbuch-Bezau)",
+        "score": 2
+      }
+    ]
+  },
+  "Wurzeralm-Spital am Pyhrn": {
+    "status": "auto",
+    "ski_area_name": "Wurzeralm",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Wurzeralm",
+        "score": 1
+      }
+    ]
+  },
+  "Präbichl-Vordernberg": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Präbichl",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Präbichl",
+        "score": 1
+      }
+    ]
+  },
+  "Pfelders-Moos in Passeier-": {
+    "status": "auto",
+    "ski_area_name": "Pfelders",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Pfelders",
+        "score": 1
+      }
+    ]
+  },
+  "Lavarone": {
+    "status": "auto",
+    "ski_area_name": "Ski Center Lavarone",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Center Lavarone",
+        "score": 1
+      }
+    ]
+  },
+  "Geißkopf-Bischofsmais": {
+    "status": "auto",
+    "ski_area_name": "Geißkopf",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Geißkopf",
+        "score": 1
+      }
+    ]
+  },
+  "Donovaly-Park Snow-": {
+    "status": "auto",
+    "ski_area_name": "Donovaly",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Donovaly",
+        "score": 1
+      }
+    ]
+  },
+  "Sudelfeld-Bayrischzell": {
+    "status": "auto",
+    "ski_area_name": "Sudelfeld - Bayrischzell",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Sudelfeld - Bayrischzell",
+        "score": 2
+      },
+      {
+        "name": "Langlauf-Zentrum Bayrischzell",
+        "score": 1
+      }
+    ]
+  },
+  "Grüntenlifte-Kranzegg-Rettenberg-": {
+    "status": "auto",
+    "ski_area_name": "Grünten (Rettenberg)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Grünten (Rettenberg)",
+        "score": 1
+      },
+      {
+        "name": "Adelharz- und Breitensteinlifte (Kranzegg am Grünten)",
+        "score": 1
+      }
+    ]
+  },
+  "Grebenzen-St. Lambrecht": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Grebenzen",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Grebenzen",
+        "score": 1
+      }
+    ]
+  },
+  "Kirchdorf": {
+    "status": "override",
+    "ski_area_name": "Skigebiet Kirchdorf in Tirol",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Nebelhorn-Oberstdorf": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Nebelhorn",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Nebelhorn",
+        "score": 1
+      }
+    ]
+  },
+  "Lachtal": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Lachtal",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Lachtal",
+        "score": 1
+      },
+      {
+        "name": "Lachtal",
+        "score": 1
+      }
+    ]
+  },
+  "Ramsau am Dachstein-Rittisberg": {
+    "status": "auto",
+    "ski_area_name": "Ramsau am Dachstein",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ramsau am Dachstein",
+        "score": 1
+      }
+    ]
+  },
+  "Eibenstock": {
+    "status": "override",
+    "ski_area_name": "Wintersportzentrum Eibenstock",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Bürchen-​Törbel-Moosalp": {
+    "status": "auto",
+    "ski_area_name": "Bürchen - Törbel",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Bürchen - Törbel",
+        "score": 1
+      }
+    ]
+  },
+  "Guzet": {
+    "status": "auto",
+    "ski_area_name": "Guzet-Neige",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Guzet-Neige",
+        "score": 1
+      }
+    ]
+  },
+  "Fichtelberg-Oberwiesenthal": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Oberwiesenthal",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Oberwiesenthal",
+        "score": 1
+      }
+    ]
+  },
+  "Bellwald": {
+    "status": "auto",
+    "ski_area_name": "Bellwald",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Bellwald",
+        "score": 1
+      }
+    ]
+  },
+  "Klewenalp-​Stockhütte-Beckenried-​Emmetten": {
+    "status": "auto",
+    "ski_area_name": "Klewenalp - Stockhütte",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Klewenalp - Stockhütte",
+        "score": 1
+      }
+    ]
+  },
+  "Schöneck-Skiwelt-": {
+    "status": "auto",
+    "ski_area_name": "SkiWelt Wilder Kaiser - Brixental",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "SkiWelt Wilder Kaiser - Brixental",
+        "score": 1
+      },
+      {
+        "name": "Schöneck",
+        "score": 1
+      }
+    ]
+  },
+  "Štrbské Pleso": {
+    "status": "auto",
+    "ski_area_name": "Štrbské Pleso",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Štrbské Pleso",
+        "score": 1
+      }
+    ]
+  },
+  "Gaissau-Hintersee": {
+    "status": "auto",
+    "ski_area_name": "Gaißau -Hintersee",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gaißau -Hintersee",
+        "score": 1
+      }
+    ]
+  },
+  "Hochrindl-Sirnitz": {
+    "status": "auto",
+    "ski_area_name": "Hochrindl",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Hochrindl",
+        "score": 1
+      }
+    ]
+  },
+  "La Bresse-Hohneck": {
+    "status": "auto",
+    "ski_area_name": "La Bresse - Hohneck",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "La Bresse - Hohneck",
+        "score": 2
+      },
+      {
+        "name": "La Bresse Brabant",
+        "score": 1
+      },
+      {
+        "name": "La Bresse - Lispach",
+        "score": 1
+      }
+    ]
+  },
+  "Silbersattel-Steinach": {
+    "status": "auto",
+    "ski_area_name": "Silbersattel",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Silbersattel",
+        "score": 1
+      }
+    ]
+  },
+  "Lammeralm-Langenwang": {
+    "status": "auto",
+    "ski_area_name": "Lammeralm (Langenwang)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Lammeralm (Langenwang)",
+        "score": 2
+      }
+    ]
+  },
+  "Loser-Altaussee": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Loser-Altaussee",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Skigebiet Loser-Altaussee",
+        "score": 3
+      }
+    ]
+  },
+  "Christlum-Achenkirch": {
+    "status": "auto",
+    "ski_area_name": "Christlum",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Christlum",
+        "score": 1
+      },
+      {
+        "name": "Achenkirch Sonnberglifte (Adlerhorst)",
+        "score": 1
+      }
+    ]
+  },
+  "Grasgehren-Bolgengrat": {
+    "status": "auto",
+    "ski_area_name": "Grasgehren",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Grasgehren",
+        "score": 1
+      }
+    ]
+  },
+  "Götschen-Bischofswiesen": {
+    "status": "auto",
+    "ski_area_name": "Götschenkopf",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Götschenkopf",
+        "score": 1
+      }
+    ]
+  },
+  "Torrent-Leukerbad": {
+    "status": "auto",
+    "ski_area_name": "Leukerbad (Torrent)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Leukerbad (Torrent)",
+        "score": 2
+      },
+      {
+        "name": "Leukerbad - Gemmipass",
+        "score": 1
+      }
+    ]
+  },
+  "Monte Popolo-Eben im Pongau": {
+    "status": "auto",
+    "ski_area_name": "Monte Popolo - Eben im Pongau",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Monte Popolo - Eben im Pongau",
+        "score": 2
+      }
+    ]
+  },
+  "Alpe Lusia-Moena-​Bellamonte": {
+    "status": "auto",
+    "ski_area_name": "Ski Area Alpe Lusia",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Area Alpe Lusia",
+        "score": 1
+      }
+    ]
+  },
+  "Unternberg-Ruhpolding-": {
+    "status": "auto",
+    "ski_area_name": "Unternberg (Ruhpolding)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Unternberg (Ruhpolding)",
+        "score": 2
+      },
+      {
+        "name": "Rauschberg (Ruhpolding)",
+        "score": 1
+      },
+      {
+        "name": "Westernberg (Ruhpolding)",
+        "score": 1
+      }
+    ]
+  },
+  "Diavolezza-​Lagalb": {
+    "status": "auto",
+    "ski_area_name": "Diavolezza-Lagalb",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Diavolezza-Lagalb",
+        "score": 1
+      }
+    ]
+  },
+  "Kubínska hoľa": {
+    "status": "auto",
+    "ski_area_name": "Kubínská hola",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kubínská hola",
+        "score": 1
+      }
+    ]
+  },
+  "Molines-en-Queyras-​Saint-Véran": {
+    "status": "auto",
+    "ski_area_name": "Queyras - Molines/Saint-Véran",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Queyras - Molines/Saint-Véran",
+        "score": 3
+      },
+      {
+        "name": "Queyras - Aiguilles",
+        "score": 1
+      },
+      {
+        "name": "Queyras - Haut-Guil (Abriès)",
+        "score": 1
+      }
+    ]
+  },
+  "Tatranská Lomnica": {
+    "status": "auto",
+    "ski_area_name": "Vysoké Tatry - Tatranská Lomnica",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Vysoké Tatry - Tatranská Lomnica",
+        "score": 1
+      }
+    ]
+  },
+  "Kanin-Sella Nevea-​Bovec": {
+    "status": "auto",
+    "ski_area_name": "Sella Nevea - Kanin, Sella Nevea - Canin, Kanin - Sella Nevea",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Sella Nevea - Kanin, Sella Nevea - Canin, Kanin - Sella Nevea",
+        "score": 2
+      }
+    ]
+  },
+  "Oberjoch-Bad Hindelang-– Iseler": {
+    "status": "auto",
+    "ski_area_name": "Hindelang Oberjoch",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Hindelang Oberjoch",
+        "score": 1
+      }
+    ]
+  },
+  "Mönichkirchen-​Mariensee": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Mönichkirchen - Mariensee",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Mönichkirchen - Mariensee",
+        "score": 1
+      }
+    ]
+  },
+  "Grächen": {
+    "status": "auto",
+    "ski_area_name": "Grächen",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Grächen",
+        "score": 1
+      }
+    ]
+  },
+  "Puigmal": {
+    "status": "auto",
+    "ski_area_name": "Puigmal 2900",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Puigmal 2900",
+        "score": 1
+      }
+    ]
+  },
+  "Kranzberg-Mittenwald": {
+    "status": "auto",
+    "ski_area_name": "Mittenwald - Kranzberg",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Mittenwald - Kranzberg",
+        "score": 2
+      },
+      {
+        "name": "Karwendelbahn (Dammkar-Mittenwald)",
+        "score": 1
+      },
+      {
+        "name": "Mittenwald Riedboden",
+        "score": 1
+      }
+    ]
+  },
+  "Wetterstein lifts-Wettersteinbahnen-– Ehrwald": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Ehrwalder Wettersteinbahnen",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Skigebiet Ehrwalder Wettersteinbahnen",
+        "score": 2
+      },
+      {
+        "name": "Ehrwalder Alm",
+        "score": 1
+      }
+    ]
+  },
+  "Stuhleck-Spital am Semmering": {
+    "status": "auto",
+    "ski_area_name": "Skigebiet Stuhleck - Semmering",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skigebiet Stuhleck - Semmering",
+        "score": 1
+      }
+    ]
+  },
+  "Rossfeld - Berchtesgaden - Oberau": {
+    "status": "auto",
+    "ski_area_name": "Grünsteinlift (Berchtesgaden)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Grünsteinlift (Berchtesgaden)",
+        "score": 1
+      },
+      {
+        "name": "Zugspitzland Loipen (Eschenlohe, Oberau, Farchant)",
+        "score": 1
+      },
+      {
+        "name": "Hocheck (Oberaudorf)",
+        "score": 1
+      }
+    ]
+  },
+  "Tignes - ​Val d'Isère": {
+    "status": "auto",
+    "ski_area_name": "Tignes - Val d'Isère",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Tignes - Val d'Isère",
+        "score": 1
+      }
+    ]
+  },
+  "Courchevel (Les 3 Vallées)": {
+    "status": "override",
+    "ski_area_name": "Les 3 Vallées",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Les Gets (Les Portes du Soleil)": {
+    "status": "auto",
+    "ski_area_name": "Les Gets-Morzine",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Gets-Morzine",
+        "score": 1
+      }
+    ]
+  },
+  "Avoriaz (Les Portes du Soleil)": {
+    "status": "auto",
+    "ski_area_name": "Avoriaz",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Avoriaz",
+        "score": 1
+      }
+    ]
+  },
+  "Châtel (Les Portes du Soleil)": {
+    "status": "auto",
+    "ski_area_name": "Val Chatel",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Val Chatel",
+        "score": 1
+      },
+      {
+        "name": "Châteleu",
+        "score": 1
+      }
+    ]
+  },
+  "Obergurgl-Hochgurgl": {
+    "status": "auto",
+    "ski_area_name": "Obergurgl-Hochgurgl",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Obergurgl-Hochgurgl",
+        "score": 3
+      }
+    ]
+  },
+  "Kaunertal Glacier (Kaunertaler Gletscher)": {
+    "status": "auto",
+    "ski_area_name": "Kaunertaler Gletscher",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kaunertaler Gletscher",
+        "score": 1
+      }
+    ]
+  },
+  "Ski Juwel Alpbachtal Wildschönau": {
+    "status": "override",
+    "ski_area_name": "Ski Juwel Alpbachtal-Wildschönau",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Reither Kogel-Reith im Alpbachtal": {
+    "status": "auto",
+    "ski_area_name": "Ski Juwel - Reith im Alpbachtal",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Juwel - Reith im Alpbachtal",
+        "score": 1
+      }
+    ]
+  },
+  "Ellmau (SkiWelt Wilder Kaiser-Brixental)": {
+    "status": "override",
+    "ski_area_name": "SkiWelt Wilder Kaiser - Brixental",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Westendorf (SkiWelt Wilder Kaiser-Brixental)": {
+    "status": "override",
+    "ski_area_name": "SkiWelt Wilder Kaiser - Brixental",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Kitzsteinhorn - Kaprun": {
+    "status": "auto",
+    "ski_area_name": "Kaprun - Kitzsteinhorn/Maiskogel",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Kaprun - Kitzsteinhorn/Maiskogel",
+        "score": 2
+      }
+    ]
+  },
+  "Saint Martin de Belleville (Les 3 Vallées)": {
+    "status": "override",
+    "ski_area_name": "Les 3 Vallées",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "La Plagne (Paradiski)": {
+    "status": "auto",
+    "ski_area_name": "La Plagne",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "La Plagne",
+        "score": 1
+      }
+    ]
+  },
+  "Schladming (4-Berge-Skischauke)": {
+    "status": "auto",
+    "ski_area_name": "Schladming Dachstein",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Schladming Dachstein",
+        "score": 1
+      }
+    ]
+  },
+  "Alpe d'Huez": {
+    "status": "auto",
+    "ski_area_name": "Alpe d'Huez Grand Domaine",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Alpe d'Huez Grand Domaine",
+        "score": 1
+      }
+    ]
+  },
+  "Axamer Lizum": {
+    "status": "auto",
+    "ski_area_name": "Axamer Lizum - Muttereralm",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Axamer Lizum - Muttereralm",
+        "score": 1
+      }
+    ]
+  },
+  "Bonneval sur Arc": {
+    "status": "override",
+    "ski_area_name": "Haute Maurienne - Bonneval-sur-Arc",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Brauneck Lenggries ​Wegscheid": {
+    "status": "override",
+    "ski_area_name": "Brauneck - Lenggries",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Madonna di Campiglio-​Pinzolo-​Folgàrida-​Marilleva": {
+    "status": "override",
+    "ski_area_name": "Campiglio Dolomiti di Brenta",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Le Lys - Cauterets": {
+    "status": "auto",
+    "ski_area_name": "Cauterets Cirque du Lys",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Cauterets Cirque du Lys",
+        "score": 1
+      },
+      {
+        "name": "Cauterets Pont d'Espagne",
+        "score": 1
+      }
+    ]
+  },
+  "Cervinia": {
+    "status": "auto",
+    "ski_area_name": "Zermatt - Breuil-Cervinia, Breuil-Cervinia Ski Paradise",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Zermatt - Breuil-Cervinia, Breuil-Cervinia Ski Paradise",
+        "score": 1
+      }
+    ]
+  },
+  "Grands Montets-Argentière (Chamonix)": {
+    "status": "auto",
+    "ski_area_name": "Les Grands Montets",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Grands Montets",
+        "score": 1
+      },
+      {
+        "name": "Les Planards (Chamonix)",
+        "score": 1
+      },
+      {
+        "name": "Brévent/Flégère (Chamonix)",
+        "score": 1
+      }
+    ]
+  },
+  "Balme-​Les Autannes-Vallorcine-​Le Tour": {
+    "status": "auto",
+    "ski_area_name": "Balme - Vallorcine",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Balme - Vallorcine",
+        "score": 2
+      }
+    ]
+  },
+  "Crans-Montana": {
+    "status": "auto",
+    "ski_area_name": "Crans-Montana",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Crans-Montana",
+        "score": 3
+      },
+      {
+        "name": "Estación Invernal y de Montaña San Isidro (Sector Cebolledo y Requejines)",
+        "score": 1
+      },
+      {
+        "name": "Estación de Esquí y Montaña Alto Campoo",
+        "score": 1
+      }
+    ]
+  },
+  "Jakobshorn (Davos Klosters)": {
+    "status": "auto",
+    "ski_area_name": "Jakobshorn",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Jakobshorn",
+        "score": 1
+      }
+    ]
+  },
+  "Madrisa (Davos Klosters)": {
+    "status": "auto",
+    "ski_area_name": "Madrisa",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Madrisa",
+        "score": 1
+      }
+    ]
+  },
+  "Cortina d'Ampezzo": {
+    "status": "auto",
+    "ski_area_name": "Cortina d'Ampezzo (Faloria - Cristallo - Mietres - Tofana)",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Cortina d'Ampezzo (Faloria - Cristallo - Mietres - Tofana)",
+        "score": 1
+      },
+      {
+        "name": "Cortina d'Ampezzo",
+        "score": 1
+      }
+    ]
+  },
+  "St. Moritz - Corviglia": {
+    "status": "auto",
+    "ski_area_name": "Corviglia",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Corviglia",
+        "score": 1
+      }
+    ]
+  },
+  "Galtür": {
+    "status": "auto",
+    "ski_area_name": "Galtür",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Galtür",
+        "score": 1
+      }
+    ]
+  },
+  "Golm": {
+    "status": "auto",
+    "ski_area_name": "Golm",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Golm",
+        "score": 1
+      }
+    ]
+  },
+  "Gresse en Vercors": {
+    "status": "auto",
+    "ski_area_name": "Gresse en Vercors",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gresse en Vercors",
+        "score": 1
+      }
+    ]
+  },
+  "Wasserngrat (Gstaad)": {
+    "status": "auto",
+    "ski_area_name": "Gstaad - Wasserngrat",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Gstaad - Wasserngrat",
+        "score": 2
+      },
+      {
+        "name": "Gstaad - Saanen - Rougemont",
+        "score": 1
+      },
+      {
+        "name": "Wispile – Gstaad",
+        "score": 1
+      }
+    ]
+  },
+  "Arosa Lenzerheide": {
+    "status": "auto",
+    "ski_area_name": "Arosa Lenzerheide",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Arosa Lenzerheide",
+        "score": 1
+      }
+    ]
+  },
+  "Verbier (4 Vallées)": {
+    "status": "auto",
+    "ski_area_name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+        "score": 2
+      }
+    ]
+  },
+  "Nendaz (4 Vallées)": {
+    "status": "auto",
+    "ski_area_name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+        "score": 2
+      }
+    ]
+  },
+  "Thyon (4 Vallées)": {
+    "status": "auto",
+    "ski_area_name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+        "score": 2
+      }
+    ]
+  },
+  "Veysonnaz (4 Vallées)": {
+    "status": "auto",
+    "ski_area_name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+        "score": 2
+      }
+    ]
+  },
+  "Ischgl": {
+    "status": "auto",
+    "ski_area_name": "Silvretta Arena Ischgl/Samnaun",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Silvretta Arena Ischgl/Samnaun",
+        "score": 1
+      }
+    ]
+  },
+  "Kranjska Gora": {
+    "status": "auto",
+    "ski_area_name": "Kranjska Gora",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Kranjska Gora",
+        "score": 1
+      }
+    ]
+  },
+  "Kuühtai": {
+    "status": "override",
+    "ski_area_name": "Kühtai",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "La Grave - La Meije": {
+    "status": "auto",
+    "ski_area_name": "La Grave La Meije",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "La Grave La Meije",
+        "score": 2
+      },
+      {
+        "name": "La Grave",
+        "score": 1
+      }
+    ]
+  },
+  "Les Deux alpes": {
+    "status": "auto",
+    "ski_area_name": "Les Deux Alpes",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Deux Alpes",
+        "score": 1
+      }
+    ]
+  },
+  "Les Contamines-​Hauteluce": {
+    "status": "auto",
+    "ski_area_name": "Les Contamines",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Contamines",
+        "score": 1
+      }
+    ]
+  },
+  "Les Orres": {
+    "status": "auto",
+    "ski_area_name": "Les Orres",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Orres",
+        "score": 1
+      }
+    ]
+  },
+  "Zermatt - Matterhorn": {
+    "status": "auto",
+    "ski_area_name": "Zermatt - Breuil-Cervinia, Breuil-Cervinia Ski Paradise",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Zermatt - Breuil-Cervinia, Breuil-Cervinia Ski Paradise",
+        "score": 1
+      }
+    ]
+  },
+  "Obertauern": {
+    "status": "auto",
+    "ski_area_name": "Obertauern",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Obertauern",
+        "score": 1
+      }
+    ]
+  },
+  "Saalbach Hinterglemm Leogang Fieberbrunn (Skicircus)": {
+    "status": "auto",
+    "ski_area_name": "Skicircus Saalbach-Hinterglemm Leogang Fieberbrunn",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skicircus Saalbach-Hinterglemm Leogang Fieberbrunn",
+        "score": 1
+      }
+    ]
+  },
+  "Saas-Fee": {
+    "status": "auto",
+    "ski_area_name": "Saas Fee",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Saas Fee",
+        "score": 2
+      },
+      {
+        "name": "Saas-Almagell - Furggstalden/Heidbodme",
+        "score": 1
+      },
+      {
+        "name": "Mount Jebel Hafeet",
+        "score": 1
+      }
+    ]
+  },
+  "Sainte-Foy-Tarentaise": {
+    "status": "auto",
+    "ski_area_name": "Sainte-Foy Tarentaise",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Sainte-Foy Tarentaise",
+        "score": 3
+      },
+      {
+        "name": "Sainte-Anne la Condamine",
+        "score": 1
+      },
+      {
+        "name": "Sainte-Croix - Les rasses",
+        "score": 1
+      }
+    ]
+  },
+  "Val Senales Glacier": {
+    "status": "override",
+    "ski_area_name": "Val Senales Glacier - Schnalstal Gletscher",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Serfaus-Fiss-Ladis": {
+    "status": "auto",
+    "ski_area_name": "Serfaus Fiss Ladis",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Serfaus Fiss Ladis",
+        "score": 3
+      }
+    ]
+  },
+  "Sestriere ski resort (Via Lattea)": {
+    "status": "override",
+    "ski_area_name": "Via Lattea",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Silvretta Montafon": {
+    "status": "auto",
+    "ski_area_name": "Silvretta Montafon",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Silvretta Montafon",
+        "score": 1
+      }
+    ]
+  },
+  "Wagrain (Ski amedé)": {
+    "status": "auto",
+    "ski_area_name": "Wagrain",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Wagrain",
+        "score": 1
+      }
+    ]
+  },
+  "Flachau (Ski amedé)": {
+    "status": "auto",
+    "ski_area_name": "Flachau",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Flachau",
+        "score": 1
+      },
+      {
+        "name": "Shuttleberg Flachauwinkl-Kleinarl",
+        "score": 1
+      },
+      {
+        "name": "Zauchensee-Flachauwinkl",
+        "score": 1
+      }
+    ]
+  },
+  "St. Anton (Ski Arlberg)": {
+    "status": "auto",
+    "ski_area_name": "Ski Arlberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Arlberg",
+        "score": 1
+      },
+      {
+        "name": "St. Anton/St. Christoph/Stuben",
+        "score": 1
+      },
+      {
+        "name": "St. Antönien",
+        "score": 1
+      }
+    ]
+  },
+  "Lech (Ski Arlberg)": {
+    "status": "auto",
+    "ski_area_name": "Ski Arlberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Arlberg",
+        "score": 1
+      },
+      {
+        "name": "Steeplechase Ski & Snowboard",
+        "score": 1
+      },
+      {
+        "name": "Lechnerberglifte",
+        "score": 1
+      }
+    ]
+  },
+  "St. Christoph (Ski Arlberg)": {
+    "status": "auto",
+    "ski_area_name": "Ski Arlberg",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Ski Arlberg",
+        "score": 1
+      },
+      {
+        "name": "St. Anton/St. Christoph/Stuben",
+        "score": 1
+      }
+    ]
+  },
+  "St. Johann in Tirol": {
+    "status": "override",
+    "ski_area_name": "St. Johann in Tirol",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Bad Gastein": {
+    "status": "override",
+    "ski_area_name": "Bad Gastein - Sportgastein",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Kronplatz (Plan de Corones)": {
+    "status": "auto",
+    "ski_area_name": "Kronplatz - Plan de Corones, Kronplatz, Plan de Corones",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Kronplatz - Plan de Corones, Kronplatz, Plan de Corones",
+        "score": 2
+      }
+    ]
+  },
+  "Gargellen": {
+    "status": "auto",
+    "ski_area_name": "Gargellen",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Gargellen",
+        "score": 1
+      }
+    ]
+  },
+  "Hochschwarzeck": {
+    "status": "override",
+    "ski_area_name": "Hochschwarzeck",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Sölden": {
+    "status": "auto",
+    "ski_area_name": "Sölden",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Sölden",
+        "score": 1
+      }
+    ]
+  },
+  "Stubai Glacier": {
+    "status": "override",
+    "ski_area_name": "Stubaier Gletscher",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Elfer Neustift": {
+    "status": "override",
+    "ski_area_name": "Elfer, Neustift im Stubaital",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Val Gardena": {
+    "status": "override",
+    "ski_area_name": "Val Gardena - Gröden",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Val Thorens (Les 3 Vallées)": {
+    "status": "auto",
+    "ski_area_name": "Val Thorens - Orelle",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Val Thorens - Orelle",
+        "score": 1
+      }
+    ]
+  },
+  "Montgenèvre (Via Lattea)": {
+    "status": "auto",
+    "ski_area_name": "Montgenèvre",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Montgenèvre",
+        "score": 1
+      }
+    ]
+  },
+  "Sauze d’Oulx (Via Lattea)": {
+    "status": "override",
+    "ski_area_name": "Via Lattea",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Gressoney - La-Trinite (Monterosa Ski)": {
+    "status": "auto",
+    "ski_area_name": "Monterosa Ski",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Monterosa Ski",
+        "score": 1
+      },
+      {
+        "name": "Gressoney-Saint-Jean",
+        "score": 1
+      }
+    ]
+  },
+  "Champoluc (Monterosa Ski)": {
+    "status": "auto",
+    "ski_area_name": "Monterosa Ski",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Monterosa Ski",
+        "score": 1
+      }
+    ]
+  },
+  "Zauchensee": {
+    "status": "auto",
+    "ski_area_name": "Zauchensee-Flachauwinkl",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Zauchensee-Flachauwinkl",
+        "score": 1
+      }
+    ]
+  },
+  "Three Peaks Dolomites-Helm-​Stiergarten": {
+    "status": "override",
+    "ski_area_name": "Helm / 3 Zinnen Dolomites",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Mitterdorf-Almberg": {
+    "status": "override",
+    "ski_area_name": "Mitterdorf - Almberg",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Jochgrimm-Passo Oclini": {
+    "status": "auto",
+    "ski_area_name": "Jochgrimm, Passo Oclini",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Jochgrimm, Passo Oclini",
+        "score": 2
+      }
+    ]
+  },
+  "Glacier 3000": {
+    "status": "auto",
+    "ski_area_name": "Glacier 3000",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Glacier 3000",
+        "score": 1
+      },
+      {
+        "name": "Villars-Gryon / Les Diablerets / Glacier 3000 / Bex",
+        "score": 1
+      }
+    ]
+  },
+  "Les Arcs": {
+    "status": "auto",
+    "ski_area_name": "Les Arcs",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Les Arcs",
+        "score": 1
+      }
+    ]
+  },
+  "Livigno": {
+    "status": "auto",
+    "ski_area_name": "Livigno",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Livigno",
+        "score": 1
+      }
+    ]
+  },
+  "Kitzbuhel": {
+    "status": "override",
+    "ski_area_name": "Kitzbühel",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Hochkonig": {
+    "status": "auto",
+    "ski_area_name": "Hochkönig",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Hochkönig",
+        "score": 1
+      }
+    ]
+  },
+  "Villars": {
+    "status": "auto",
+    "ski_area_name": "Villars/Gryon/Les Diablerets",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Villars/Gryon/Les Diablerets",
+        "score": 1
+      },
+      {
+        "name": "Villars-Gryon / Les Diablerets / Glacier 3000 / Bex",
+        "score": 1
+      }
+    ]
+  },
+  "Kleine Scheidegg / ​Männlichen-Grindelwald / ​Wengen": {
+    "status": "auto",
+    "ski_area_name": "Grindelwald - Wengen (Kleine Scheidegg - Männlichen)",
+    "confidence": "high",
+    "candidates": [
+      {
+        "name": "Grindelwald - Wengen (Kleine Scheidegg - Männlichen)",
+        "score": 2
+      },
+      {
+        "name": "Grindelwald - Männlichen (Schlittelpiste)",
+        "score": 1
+      },
+      {
+        "name": "Grindelwald First",
+        "score": 1
+      }
+    ]
+  },
+  "San Bernardo La Rosire": {
+    "status": "override",
+    "ski_area_name": "La Rosière - San Bernardo",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "La Thuile": {
+    "status": "auto",
+    "ski_area_name": "La Thuile ski",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "La Thuile ski",
+        "score": 1
+      }
+    ]
+  },
+  "Courmayeur": {
+    "status": "auto",
+    "ski_area_name": "Courmayeur",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Courmayeur",
+        "score": 1
+      },
+      {
+        "name": "Courmayeur Val Ferret",
+        "score": 1
+      }
+    ]
+  },
+  "Mayrhofen": {
+    "status": "auto",
+    "ski_area_name": "Mayrhofen Hippach",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Mayrhofen Hippach",
+        "score": 1
+      }
+    ]
+  },
+  "Serre Chevalier": {
+    "status": "override",
+    "ski_area_name": "Serre Chevalier Vallée Briançon",
+    "confidence": "manual",
+    "candidates": []
+  },
+  "Madesimo": {
+    "status": "auto",
+    "ski_area_name": "Skiarea Valchiavenna Madesimo/Campodolcino",
+    "confidence": "medium",
+    "candidates": [
+      {
+        "name": "Skiarea Valchiavenna Madesimo/Campodolcino",
+        "score": 1
+      }
+    ]
+  }
+}
