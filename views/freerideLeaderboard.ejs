@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeride Terrain | European Powder Forecast</title>
+    <link rel="stylesheet" href="/styles/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .freeride-table { width: 100%; border-collapse: collapse; }
+        .freeride-table th, .freeride-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        .freeride-table th { background: #f8fafc; font-weight: 600; font-size: 0.85rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }
+        .score-bar-wrap { display: flex; align-items: center; gap: 10px; }
+        .score-bar { height: 8px; border-radius: 4px; background: #e2e8f0; width: 120px; flex-shrink: 0; }
+        .score-bar-fill { height: 8px; border-radius: 4px; background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
+        .score-num { font-weight: 700; font-size: 1rem; min-width: 36px; }
+        .components { font-size: 0.78rem; color: #64748b; }
+        .freeride-note { margin: 16px 0; padding: 12px 16px; background: #f0f9ff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.88rem; color: #334155; }
+    </style>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <div class="container">
+        <section class="forecast-section">
+            <div class="section-header">
+                <h3>Freeride Terrain Index</h3>
+                <p>Resorts ranked by lift-served freeride terrain quality &mdash; computed from slope steepness (30&ndash;45&deg;), north-facing aspect for powder retention, and vertical drop.</p>
+            </div>
+
+            <div class="freeride-note">
+                <strong>How it works:</strong> S = % of steep terrain (30&ndash;45&deg;), A = aspect quality (N=best), V = vertical drop (capped 1,500 m). Combined = S&times;0.5 + A&times;0.3 + V&times;0.2, scaled 0&ndash;100. Based on Copernicus 30m DEM.
+            </div>
+
+            <% if (!resorts || resorts.length === 0) { %>
+                <p>No terrain data available.</p>
+            <% } else { %>
+            <div class="table-container">
+                <table class="freeride-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Resort</th>
+                            <th>Terrain Score</th>
+                            <th>Components</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% resorts.forEach(function(resort, index) { %>
+                            <tr>
+                                <td><%= index + 1 %></td>
+                                <td><%= resort.resort %></td>
+                                <td>
+                                    <div class="score-bar-wrap">
+                                        <span class="score-num"><%= Math.round(resort.combined) %></span>
+                                        <div class="score-bar">
+                                            <div class="score-bar-fill" style="width:<%= Math.round(resort.combined) %>%"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="components">
+                                    S=<%= (resort.S * 100).toFixed(1) %>%
+                                    &nbsp;A=<%= resort.A.toFixed(2) %>
+                                    &nbsp;V=<%= resort.V.toFixed(2) %>
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+            <% } %>
+        </section>
+    </div>
+</body>
+</html>
