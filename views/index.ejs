@@ -64,6 +64,26 @@
         </section>
         <% } %>
 
+        <% if (typeof topFreeride !== 'undefined' && topFreeride && topFreeride.length) { %>
+        <section class="pqi-home-section">
+            <div class="section-one-header">
+                <h2>Top Freeride Terrain</h2>
+                <div class="button-group">
+                    <a href="/freeride" class="btn">See Full Freeride Leaderboard</a>
+                </div>
+            </div>
+            <div class="pqi-home-grid">
+                <% topFreeride.forEach(function(resort) { %>
+                    <a href="/freeride" class="pqi-card">
+                        <span class="pqi-badge"><%= resort.combined %></span>
+                        <span class="pqi-card-name"><%= resort.resort %></span>
+                        <span class="pqi-card-meta">Terrain score</span>
+                    </a>
+                <% }); %>
+            </div>
+        </section>
+        <% } %>
+
         <section class="forecast-section">
             <div class="section-one-header">
                 <h2>Top 10 Resorts for Upcoming Powder</h2>

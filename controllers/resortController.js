@@ -72,10 +72,22 @@ exports.getSnowfallForResorts = async (req, res) => {
             .sort((a, b) => b.peakPQI - a.peakPQI)
             .slice(0, 5);
 
+        const freerideScores = allFreerideScores();
+        const topFreeride = Object.entries(freerideScores)
+          .sort((a, b) => b[1].combined - a[1].combined)
+          .slice(0, 5)
+          .map(([name, s]) => ({
+            resort: name,
+            combined: Math.round(s.combined),
+            url: (weatherData[name] && weatherData[name].url) || '#',
+            country: (weatherData[name] && weatherData[name].country) || '',
+          }));
+
         res.render('index', {
             sortedByUpcoming7Days,
             sortedByLast14Days,
-            topPowder
+            topPowder,
+            topFreeride
         });
     } catch (error) {
         console.error('Error reading weather data:', error);
