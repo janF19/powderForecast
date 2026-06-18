@@ -9,7 +9,8 @@ function _load() {
   if (!_cache) {
     try {
       _cache = JSON.parse(fs.readFileSync(TERRAIN_JSON, 'utf-8'));
-    } catch {
+    } catch (err) {
+      console.error('freerideScore: failed to load terrain JSON:', err);
       _cache = {};
     }
   }
