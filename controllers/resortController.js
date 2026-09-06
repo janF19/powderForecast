@@ -7,7 +7,9 @@ const os = require('os');
 
 
 
-const allResortsForecastPath = path.join(__dirname, '../weather_dataFull_7.json')
+// Data se ctou z pameti (weatherData.js je stahuje z vetve `data`),
+// ne ze souboru pri kazdem requestu.
+const weatherStore = require('../weatherData');
 
 const getLiftElevation = (resortData, liftName) => {
     return resortData?.elevations?.[liftName]?.elevation_m ?? 0;
@@ -22,7 +24,7 @@ const getLiftSnowSum = (resortData, sumName, liftName) => {
 exports.getSnowfallForResorts = async (req, res) => {
     try {
         // Read and parse the weather data JSON file
-        const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+        const weatherData = weatherStore.get();
         
         // Transform the data structure and extract top lift information
         const snowfallData = Object.entries(weatherData).reduce((resorts, [resortName, resortData]) => {
@@ -77,7 +79,7 @@ exports.getSnowfallForResorts = async (req, res) => {
 //lists by country
 exports.getAllResortsForecast = async (req, res) => {
     try {
-        const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+        const weatherData = weatherStore.get();
 
         // List of countries to process
         const countries = ['Austria', 'Italy', 'Switzerland', 'France', 'Slovakia', 'Germany', 'Czech republic', 'Slovenia'];
@@ -125,7 +127,7 @@ exports.getAllResortsForecast = async (req, res) => {
 //get all countries combined
 exports.getCombinedForecast = async (req, res) => {
     try {
-        const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+        const weatherData = weatherStore.get();
 
         
         const countries = ['Austria', 'Italy','Switzerland','France','Slovakia','Germany','Czech republic','Slovenia'];
@@ -177,7 +179,7 @@ exports.getCombinedForecast = async (req, res) => {
 
 exports.get14dayForecastCombined = async (req, res) => {
     try {
-        const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+        const weatherData = weatherStore.get();
 
         
         const countries = ['Austria', 'Italy','Switzerland','France','Slovakia','Germany','Czech republic','Slovenia'];
@@ -227,7 +229,7 @@ exports.get14dayForecastCombined = async (req, res) => {
 
 exports.getPast14DaySnow = async (req, res) => {
     try {
-        const weatherData = JSON.parse(fs.readFileSync(allResortsForecastPath, 'utf-8'));
+        const weatherData = weatherStore.get();
 
         
         const countries = ['Austria', 'Italy','Switzerland','France'];

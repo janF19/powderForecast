@@ -36,21 +36,19 @@ jobs:
           TZ: "UTC"
 
       
-      - name: Commit and push if changes exist
+      - name: Publish data to the `data` branch
+        # Data zamerne NEJDOU do main. Kazdy commit do main znamenal, ze
+        # Coolify prestavel celou aplikaci kvuli jednomu JSON souboru, ve
+        # kterem se nezmenil ani radek kodu -- a build cache na serveru rostla
+        # o ~1 GB za par dni. Aplikace si data stahuje za behu (weatherData.js).
+        #
+        # Vetev je orphan a force-pushuje se: drzi jediny soubor v jedinem
+        # commitu, takze historie nebobtna o 7 MB kazdou noc.
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add weather_dataFull_7.json
-          if ! git diff --staged --quiet; then
-            git commit -m "Update weather data [skip ci]"
-            git pull --rebase origin main
-            git push
-          fi
-
-      - name: Trigger Coolify Deploy
-        if: success()
-        run: |
-          curl -X GET "${{ secrets.COOLIFY_DEPLOY_HOOK_URL }}" \
-            -H "Authorization: Bearer ${{ secrets.COOLIFY_API_TOKEN }}"
-
-
+          git checkout --orphan data-tmp
+          git reset
+          git add -f weather_dataFull_7.json
+          git commit -m "Update weather data $(date -u +%Y-%m-%d)"
+          git push -f origin data-tmp:data

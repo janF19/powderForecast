@@ -32,6 +32,10 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+// Predpoved se stahuje z vetve `data`, aby noci aktualizace nevyvolavala
+// prestavbu cele aplikace.
+require('./weatherData').start();
+
 const scriptPath = path.join(__dirname, 'getForecastFull_all_resorts.py');
 const dataDir = process.env.DATA_DIR || __dirname;
 const jsonPath = path.join(__dirname, 'weather_dataFull_7.json');
